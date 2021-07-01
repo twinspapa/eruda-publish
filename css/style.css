@@ -288,15 +288,15 @@ h5.section-sub-title span.necessary { top: -14px; }
 /* page - wodo */
 #wedo .counter-box { color: #fff; font-size: 1.25rem; font-weight: 600; }
 #wedo .counter-box .number {font-size: 2.5rem;}
-#wedo .counter-box .number span:nth-child(2) {position: relative;left: -5px;}
+#wedo .counter-box .number span:nth-child(2) {position: relative;}
 #wedo .counter-box .number span:nth-child(1) { position: relative; right: -5px; }
 #wedo .counter-box .counter-box-item > div { border-radius: 100%; background: #298fc2; }
-#wedo .nest .item .item-title { font-size: 2.5rem; }
-#wedo .nest .item .item-text { font-size: 1.25rem; font-weight: 500; }
+#wedo .nest .item .item-title {font-size: 2.5rem;margin-bottom: 10px;}
+#wedo .nest .item .item-text {font-size: 1.25rem;font-weight: 500;line-height: 1.5;margin-bottom: 10px;}
 #wedo .nest .item .more { display: inline-block; font-size: 1rem; font-weight: 500; border-bottom: 1px solid #8b8b8b; color: #8b8b8b; line-height: 1; }
 #wedo .nest .item .btn-close { display: none; position: relative; padding-right: 12px; font-size: 1rem; font-weight: 500; border-bottom: 1px solid #8b8b8b; #wedo color: #8b8b8b; line-height: 1; }
 #wedo .nest .item .btn-close .arrow-top { position: absolute; top: -24px; right: 0; width: 6px; height: 6px; border-color: #8b8b8b; }
-#wedo .accordion li { border-bottom: 1px solid #c8c8c8; cursor: pointer; padding-bottom: 50px; margin-bottom: 3.125rem; }
+#wedo .accordion li {border-bottom: 1px solid #c8c8c8;cursor: pointer;padding-bottom: 3.125rem;margin-bottom: 3.125rem;}
 #wedo .accordion li.click { padding-bottom: 6.25rem; margin-bottom: 6.25rem; }
 #wedo .accordion li.click .nest .more { display: none; }
 #wedo .accordion li.click .nest .btn-close { display: inline-block; }

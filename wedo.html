@@ -92,11 +92,11 @@
         <section class="container" style="padding-top:192px;">
             <h3 class="section-title br-circle" data-aos="fade-up">
                 브랜드와 소비자를<br>
-                <span id="rolling-text">PERFORMANCE</span><br class="d-lg-none">(으)로 잇다
+                <span id="rolling-text">PERFORMANCE</span><br class="d-sm-none">(으)로 잇다
             </h3>
             <h4 class="section-sub-title mb-5" data-aos="fade-up">
-                브랜드와 소비자의 접점을 찾기 위해 하나의<br class="d-lg-none"> 유기적인 브랜딩 기획으로 연계하여<br>
-                마케팅 성과를 극대화할 수 있는 최적의 커머스<br class="d-lg-none"> 사슬을 설계합니다.
+                브랜드와 소비자의 접점을 찾기 위해 하나의<br class="d-sm-none"> 유기적인 브랜딩 기획으로 연계하여<br>
+                마케팅 성과를 극대화할 수 있는 최적의 커머스<br class="d-sm-none"> 사슬을 설계합니다.
             </h4>
             <div class="counter-box row m-0" data-aos="flip-down">
                 <div class="counter-box-item col-3 p-0">
@@ -305,35 +305,37 @@
             <h4 class="section-sub-title" data-aos="fade-up">Address</h4>
             <address data-aos="fade-up">서울특별시 성동구 아차산로 17길 48 SKV1센터 1동 1017~1022호</address>
             <div class="row">
-                <div class="col-12 col-md-7" data-aos="fade-up">
-                    <h4 class="section-sub-title">Contact</h4>
-                    <address>
-                        <a href="mailto:eruda@e-ruda.co.kr"><span>E-mail</span>eruda@e-ruda.co.kr</a>
-                        <a href="tel:070-5055-3417"><span>Tel</span>070-5055-3417</a>
-                        <a href="fax:0303-3441-0080"><span>Fax</span>0303-3441-0080</a>
-                    </address>
-                    <div class="row" data-aos="fade-up">
-                        <div class="btn-wrap col-6">
-                            <a class="btn btn-custom-2" href="#none"><span>문의 바로가기</span><img src="images/footer-btn-icon-1.png" alt=""></a>
-                        </div>
-                        <div class="btn-wrap col-6">
-                            <a class="btn btn-custom-2" href="#none"><span>회사소개서</span><img src="images/footer-btn-icon-2.png" alt=""></a>
+                <div class="col-12 col-md-7">
+                    <div data-aos="fade-up">
+                        <h4 class="section-sub-title">Contact</h4>
+                        <address>
+                            <a href="mailto:eruda@e-ruda.co.kr"><span>E-mail</span>eruda@e-ruda.co.kr</a>
+                            <a href="tel:070-5055-3417"><span>Tel</span>070-5055-3417</a>
+                            <a href="fax:0303-3441-0080"><span>Fax</span>0303-3441-0080</a>
+                        </address>
+                        <div class="row">
+                            <div class="btn-wrap col-6">
+                                <a class="btn btn-custom-2" href="#none"><span>문의 바로가기</span><img src="images/footer-btn-icon-1.png" alt=""></a>
+                            </div>
+                            <div class="btn-wrap col-6">
+                                <a class="btn btn-custom-2" href="#none"><span>회사소개서</span><img src="images/footer-btn-icon-2.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
-                    <div class="custom-box-1">
-                        <div class="social-link-wrap mb-3" data-aos="fade-up">
+                    <div class="custom-box-1" data-aos="fade-up">
+                        <div class="social-link-wrap mb-3">
                             <a href=""><img src="images/icon-instagram.png" alt=""></a>
                             <a href=""><img src="images/icon-facebook.png" alt=""></a>
                             <a href=""><img src="images/icon-blog.png" alt=""></a>
                         </div>
-                        <div class="privacy-link-wrap mb-4" data-aos="fade-up">
+                        <div class="privacy-link-wrap mb-4">
                             <a class="color-2 mr-10" href="#none">개인정보처리방침</a>
                             <a class="color-2 mr-10" href="#none">이메일무단수집거부</a>
                             <a class="color-2 mr-10" href="#none">광고문의</a>
                         </div>
-                        <div class="copyright-wrap" data-aos="fade-up">
+                        <div class="copyright-wrap">
                             <p>
                                 <span class="color-2">대표자 : 최범석</span>
                                 <span>|</span>
@@ -399,14 +401,16 @@
                         scrollTop: $(this).offset().top - 92
                     }, 400);
                 });
+
+                $(window).on('resize', function() {
+                    raito('counter-box-item', 1);
+                });
             });
 
             $('html, body').animate({
                 scrollTop: offset.top
             }, 400);
-            $(window).on('resize', function() {
-                raito('counter-box-item', 1);
-            });
+
         })(jQuery);
     </script>
 </body>
