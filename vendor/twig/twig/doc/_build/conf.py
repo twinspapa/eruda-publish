@@ -35,7 +35,7 @@ extensions = [
     'sphinx.ext.autodoc', 'sphinx.ext.doctest',
     'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode', 'sphinx.ext.extlinks',
-    'sensio.sphinx.codeblock', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode', 'sensio.sphinx.bestpractice'
+    'sensio.sphinx.codeblock', 'sensio.sphinx.configurationblock', 'sensio.sphinx.htmlcode', 'sensio.sphinx.bestpractice'
 ]
 
 #spelling_show_sugestions=True
@@ -115,7 +115,7 @@ config_block = {
 primary_domain = None
 
 # set url for API links
-#api_url = 'https://github.com/symfony/symfony/blob/master/src/%s.php'
+#api_url = 'https://github.com/symfony/symfony/blob/master/src/%s.html'
 
 
 # -- Options for HTML output ---------------------------------------------------

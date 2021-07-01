@@ -875,9 +875,9 @@ structure in your test directory::
         tags/
             foo.test
             bar.test
-    IntegrationTest.php
+    IntegrationTest.html
 
-The ``IntegrationTest.php`` file should look like this::
+The ``IntegrationTest.html`` file should look like this::
 
     use Twig\Test\IntegrationTestCase;
 

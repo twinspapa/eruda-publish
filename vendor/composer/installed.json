@@ -38,7 +38,7 @@
                     "Symfony\\Polyfill\\Ctype\\": ""
                 },
                 "files": [
-                    "bootstrap.php"
+                    "bootstrap.html"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -120,7 +120,7 @@
                     "Symfony\\Polyfill\\Mbstring\\": ""
                 },
                 "files": [
-                    "bootstrap.php"
+                    "bootstrap.html"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",

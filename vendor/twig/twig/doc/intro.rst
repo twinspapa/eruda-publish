@@ -46,7 +46,7 @@ Basic API Usage
 
 This section gives you a brief introduction to the PHP API for Twig::
 
-    require_once '/path/to/vendor/autoload.php';
+    require_once '/path/to/vendor/autoload.html';
 
     $loader = new \Twig\Loader\ArrayLoader([
         'index' => 'Hello {{ name }}!',

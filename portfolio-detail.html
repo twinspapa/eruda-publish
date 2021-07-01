@@ -1,81 +1,201 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
 
-{% block title %}PORTFOLIO BRAND NAME{% endblock %}
-{% block content %}
-<main id="portfolio-detail">
-    <section>
-        <div class="brand-hero-image" data-aos="zoom-out">
-            <img src="views/images/portfolio-detail-sample-1.png" alt="">
+<head>
+    <title>PORTFOLIO BRAND NAME</title>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <nav id="gnb">
+        <div class="nav-wrap clear">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-b" src="images/logo.png" alt="Company logo" />
+                    <img class="logo-w" src="images/logo-white.png" alt="Company logo" />
+                </a>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Menu</span>
+            </div>
+            <div class="nav-list">
+                <div class="flex">
+                    <ul>
+                        <li class="one"><a href="eruda.html">ERUDA</a></li>
+                    </ul>
+                    <ul>
+                        <li class="one"><a href="wedo.html">WORK</a></li>
+                        <li class="two"><a href="wedo.html">WE DO</a></li>
+                        <li class="two"><a href="portfolio.html">PORTFOLIO</a></li>
+                    </ul>
+                    <ul>
+                        <li class="one"><a href="magazine.html">PR</a></li>
+                        <li class="two"><a href="magazine.html">MAGAZINE</a></li>
+                        <li class="two"><a href="news.html">NEWS</a></li>
+                        <li class="two"><a href="product.html">PRODUCT</a></li>
+                    </ul>
+                    <ul>
+                        <li class="one"><a href="ad.html">CONTACT</a></li>
+                        <li class="two"><a href="ad.html">AD</a></li>
+                        <li class="two"><a href="recruit.html">RECRUIT</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <main id="portfolio-detail">
+        <section>
+            <div class="brand-hero-image" data-aos="zoom-out">
+                <img src="images/portfolio-detail-sample-1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="text-wrap">
+                    <h1 class="brand-name">젝시믹스</h1>
+                    <p class="brand-category">퍼포먼스 마케팅</p>
+                </div>
+                <div class="dsc-wrap">
+                    <p>초기 브랜드 런칭에 필요한 브랜드 아이덴티티에 부합하는 메시지 발굴을 필두로 퍼포먼스 매체 운영 및 데이터 분석,그로쓰 측명의 브랜드 상세페이지 개선 및 페이지 내 브랜드 무드 통일 및 전환 개선 사항 적용</p>
+                    <p>크리에이티브 측면인 소재 메시지 발굴 및 소재 제작까지 통합적인 마케팅을 진행하여 안정적인 브랜드 런칭 캠페인을 운영</p>
+                </div>
+                <div class="counter-wrap row">
+                    <div id="roas" class="item col-12 col-md-4 mt-md-0 mt-5">
+                        <div class="text">ROAS</div>
+                        <div class="number">
+                            <span class="counter" data-count="1800">0</span>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <div id="sales" class="item col-12 col-md-4 mt-md-0 mt-5">
+                        <div class="text">매출증가</div>
+                        <div class="number">
+                            <span class="counter" data-count="1800">0</span>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <div id="visit" class="item col-12 col-md-4 mt-md-0 mt-5">
+                        <div class="text">방문자수</div>
+                        <div class="number">
+                            <span class="counter" data-count="1800">0</span>
+                            <span>%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrap">
+                <img src="images/portfolio-detail-sample-2.png" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="footer">
         <div class="container">
-            <div class="text-wrap">
-                <h1 class="brand-name">젝시믹스</h1>
-                <p class="brand-category">퍼포먼스 마케팅</p>
-            </div>
-            <div class="dsc-wrap">
-                <p>초기 브랜드 런칭에 필요한 브랜드 아이덴티티에 부합하는 메시지 발굴을 필두로 퍼포먼스 매체 운영 및 데이터 분석,그로쓰 측명의 브랜드 상세페이지 개선 및 페이지 내 브랜드 무드 통일 및 전환 개선 사항 적용</p>
-                <p>크리에이티브 측면인 소재 메시지 발굴 및 소재 제작까지 통합적인 마케팅을 진행하여 안정적인 브랜드 런칭 캠페인을 운영</p>
-            </div>
-            <div class="counter-wrap row">
-                <div id="roas" class="item col-12 col-md-4 mt-md-0 mt-5">
-                    <div class="text">ROAS</div>
-                    <div class="number">
-                      <span class="counter" data-count="1800">0</span>
-                      <span>%</span>
+            <h3 class="section-title br-circle" data-aos="fade-up">이루다마케팅과<br>함께 하시겠습니까?</h3>
+            <h4 class="section-sub-title" data-aos="fade-up">Address</h4>
+            <address data-aos="fade-up">서울특별시 성동구 아차산로 17길 48 SKV1센터 1동 1017~1022호</address>
+            <div class="row">
+                <div class="col-12 col-md-7" data-aos="fade-up">
+                    <h4 class="section-sub-title">Contact</h4>
+                    <address>
+                        <a href="mailto:eruda@e-ruda.co.kr"><span>E-mail</span>eruda@e-ruda.co.kr</a>
+                        <a href="tel:070-5055-3417"><span>Tel</span>070-5055-3417</a>
+                        <a href="fax:0303-3441-0080"><span>Fax</span>0303-3441-0080</a>
+                    </address>
+                    <div class="row" data-aos="fade-up">
+                        <div class="btn-wrap col-6">
+                            <a class="btn btn-custom-2" href="#none"><span>문의 바로가기</span><img src="images/footer-btn-icon-1.png" alt=""></a>
+                        </div>
+                        <div class="btn-wrap col-6">
+                            <a class="btn btn-custom-2" href="#none"><span>회사소개서</span><img src="images/footer-btn-icon-2.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-                <div id="sales" class="item col-12 col-md-4 mt-md-0 mt-5">
-                    <div class="text">매출증가</div>
-                    <div class="number">
-                      <span class="counter" data-count="1800">0</span>
-                      <span>%</span>
-                    </div>
-                </div>
-                <div id="visit" class="item col-12 col-md-4 mt-md-0 mt-5">
-                    <div class="text">방문자수</div>
-                    <div class="number">
-                      <span class="counter" data-count="1800">0</span>
-                      <span>%</span>
+                <div class="col-12 col-md-5">
+                    <div class="custom-box-1">
+                        <div class="social-link-wrap mb-3" data-aos="fade-up">
+                            <a href=""><img src="images/icon-instagram.png" alt=""></a>
+                            <a href=""><img src="images/icon-facebook.png" alt=""></a>
+                            <a href=""><img src="images/icon-blog.png" alt=""></a>
+                        </div>
+                        <div class="privacy-link-wrap mb-4" data-aos="fade-up">
+                            <a class="color-2 mr-10" href="#none">개인정보처리방침</a>
+                            <a class="color-2 mr-10" href="#none">이메일무단수집거부</a>
+                            <a class="color-2 mr-10" href="#none">광고문의</a>
+                        </div>
+                        <div class="copyright-wrap" data-aos="fade-up">
+                            <p>
+                                <span class="color-2">대표자 : 최범석</span>
+                                <span>|</span>
+                                <span class="color-2">사업자등록번호 : 220-81-80363</span>
+                            </p>
+                            <p class="color-2">CopyrightⓒERUDA marketing all rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="img-wrap">
-            <img src="views/images/portfolio-detail-sample-2.png" alt="">
-        </div>
-    </section>
-</main>
-{% endblock %}
+    </footer>
 
-{% block common_js %}
-<script type="text/javascript">
-  (function($){
-    raito('counter-box-item', 1);
+    <!-- JS -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/all.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            raito('counter-box-item', 1);
 
-    $('.counter').each(function() {
-      var $this = $(this),
-          countTo = $this.attr('data-count');
+            $('.counter').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
 
-      $({ countNum: $this.text()}).animate({
-        countNum: countTo
-      },
+                $({
+                    countNum: $this.text()
+                }).animate({
+                        countNum: countTo
+                    },
 
-      {
-        duration: 3000,
-        easing:'linear',
-        step: function() {
-          $this.text(Math.floor(this.countNum));
-        },
-        complete: function() {
-          $this.text(this.countNum);
-          //alert('finished');
-        }
-      });
-    });
+                    {
+                        duration: 3000,
+                        easing: 'linear',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+                    });
+            });
 
-    $(document).ready(function() {
-      $('#gnb').addClass('hero-page')
-    });
-  })(jQuery);
-</script>
-{% endblock %}
+            $(document).ready(function() {
+                $('#gnb').addClass('hero-page')
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>

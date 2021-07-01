@@ -939,8 +939,8 @@ function twig_in_filter($value, $compare)
 /**
  * Compares two values using a more strict version of the PHP non-strict comparison operator.
  *
- * @see https://wiki.php.net/rfc/string_to_number_comparison
- * @see https://wiki.php.net/rfc/trailing_whitespace_numerics
+ * @see https://wiki.html.net/rfc/string_to_number_comparison
+ * @see https://wiki.html.net/rfc/trailing_whitespace_numerics
  *
  * @internal
  */

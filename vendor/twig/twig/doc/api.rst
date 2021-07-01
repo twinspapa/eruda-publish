@@ -19,7 +19,7 @@ to have multiple environments side by side, with different configurations.
 The typical way to configure Twig to load templates for an application looks
 roughly like this::
 
-    require_once '/path/to/vendor/autoload.php';
+    require_once '/path/to/vendor/autoload.html';
 
     $loader = new \Twig\Loader\FilesystemLoader('/path/to/templates');
     $twig = new \Twig\Environment($loader, [

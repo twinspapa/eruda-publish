@@ -33,7 +33,7 @@ class FilesystemCache implements CacheInterface
     {
         $hash = hash('sha256', $className);
 
-        return $this->directory.$hash[0].$hash[1].'/'.$hash.'.php';
+        return $this->directory.$hash[0].$hash[1].'/'.$hash.'.html';
     }
 
     public function load(string $key): void

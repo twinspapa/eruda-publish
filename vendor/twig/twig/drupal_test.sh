@@ -12,7 +12,7 @@ cd drupal-twig-test
 php ./web/core/scripts/drupal install --no-interaction demo_umami > output
 perl -p -i -e 's/^([A-Za-z]+)\: (.+)$/export DRUPAL_\1=\2/' output
 source output
-#echo '$config["system.logging"]["error_level"] = "verbose";' >> web/sites/default/settings.php
+#echo '$config["system.logging"]["error_level"] = "verbose";' >> web/sites/default/settings.html
 
 wget https://get.symfony.com/cli/installer -O - | bash
 export PATH="$HOME/.symfony/bin:$PATH"

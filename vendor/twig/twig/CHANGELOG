@@ -1593,7 +1593,7 @@ This release is NOT backward compatible with the previous releases.
 # 0.9.2 (2009-10-29)
 
  * made some speed optimizations
- * changed the cache extension to .php
+ * changed the cache extension to .html
  * added a js escaping strategy
  * added support for short block tag
  * changed the filter tag to allow chained filters

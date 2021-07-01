@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": { "Symfony\\Polyfill\\Mbstring\\": "" },
-        "files": [ "bootstrap.php" ]
+        "files": [ "bootstrap.html" ]
     },
     "suggest": {
         "ext-mbstring": "For best performance"

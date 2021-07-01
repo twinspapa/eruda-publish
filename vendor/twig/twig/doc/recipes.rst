@@ -13,7 +13,7 @@ displayed nor logged.
 To remove all deprecated feature usages from your templates, write and run a
 script along the lines of the following::
 
-    require_once __DIR__.'/vendor/autoload.php';
+    require_once __DIR__.'/vendor/autoload.html';
 
     $twig = create_your_twig_env();
 
@@ -528,4 +528,4 @@ include in your templates:
             'tag_variable' => ['{[', ']}'],
         ]));
 
-.. _callback: https://secure.php.net/manual/en/function.is-callable.php
+.. _callback: https://secure.html.net/manual/en/function.is-callable.html

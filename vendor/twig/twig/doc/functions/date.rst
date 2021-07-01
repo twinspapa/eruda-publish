@@ -41,4 +41,4 @@ Arguments
 * ``date``:     The date
 * ``timezone``: The timezone
 
-.. _`date and time formats`: https://secure.php.net/manual/en/datetime.formats.php
+.. _`date and time formats`: https://secure.html.net/manual/en/datetime.formats.html
