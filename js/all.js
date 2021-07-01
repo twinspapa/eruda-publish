@@ -1,8 +1,10 @@
 (function($){
     $(document).ready(function() {
-        AOS.init({
-            duration: 1000,
-        })
+        re_font_size('html');
+
+        $(window).resize(function() {
+            re_font_size('html');
+        });
 
         $('#gnb .menu').click(function() {
             $(this).toggleClass('active');
@@ -21,8 +23,11 @@
           else if ($(window).scrollTop() === 0){
               $("body").removeClass("body-scrolled");
           }
-
         });
+
+        AOS.init({
+            duration: 1000,
+        })
     });
 })(jQuery);
 
@@ -32,4 +37,11 @@ function raito(objClass, raito) {
         objHeight = objWidth * raito;
 
     obj.css('height', objHeight + 'px')
+}
+
+function re_font_size(element) {
+    var vw = $(window).width(),
+        fs = (vw / 1920) * 100;
+
+    $(element).css('font-size', fs + '%');
 }
