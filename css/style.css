@@ -265,24 +265,26 @@ h5.section-sub-title span.necessary { top: -14px; }
 #eruda #sec2 .txt-2 { margin: 0 0 3.125rem; }
 #eruda #sec2 .section-sub-title { margin-bottom: 6.25rem; }
 #eruda #sec2 .img-wrap { position: relative; text-align: center; z-index: 1; }
-#eruda #sec2 .img-wrap img { max-width: 1000px; }
+#eruda #sec2 .img-wrap img {max-width: 100%;}
 #eruda #sec2 { position: relative; }
 #eruda #sec2 .ani-text-wrap { position: absolute; z-index: 10; }
 #eruda #sec3 .section-title { margin: 9.375rem 0 6.25rem; }
-#eruda #sec3 .list-1 .item p { padding-bottom: 1.25rem; margin: 0; font-size: 1.25rem; font-weight: 500; line-height: 1; color: #141414; border-bottom: 3px solid #141414; }
+#eruda #sec3 .list-1 .item p {padding-bottom: 1.25rem;margin: 0;font-size: 16px;font-weight: 500;line-height: 1;color: #141414;border-bottom: 3px solid #141414;}
 #eruda #sec3 .list-1 {margin-bottom: 9.375rem;}
 #eruda #sec3 .list-2 .item { width: 20%; }
-#eruda #sec3 .list-2 { margin-bottom: 12.5rem; }
+#eruda #sec3 .list-2 {margin: 0 0 12.5rem;}
 #eruda #sec4 .section-title { margin-bottom: 6.25rem; }
-#eruda #sec4 h4 { padding-top: 1.25rem; font-size: 1.25rem; font-weight: 600; color: #141414; border-top: 1px solid #b5b5b5; margin-bottom: 3.125rem; }
-#eruda #sec4 p { padding-top: 1.25rem; margin-bottom: 6.25rem; font-size: 1.25rem; line-height: 1.875rem; font-weight: 500; border-top: 1px solid #b5b5b5; }
+#eruda #sec4 h4 {padding-top: 1.25rem;font-size: 20px;font-weight: 600;color: #141414;border-top: 1px solid #b5b5b5;margin-bottom: 3.125rem;}
+#eruda #sec4 p {padding-top: 1.25rem;margin-bottom: 6.25rem;font-size: 20px;line-height: 1.4;font-weight: 500;border-top: 1px solid #b5b5b5;}
 #eruda #sec4 > *:nth-child(2) { margin-bottom: 8.75rem; }
 #eruda #sec4 { margin-bottom: 15.625rem; }
+#eruda #sec4 .ci { margin-bottom: 60px; }
 #eruda #sec5 ul { margin: auto !important; max-width: 1000px; }
 #eruda #sec5 ul li .text-wrap { position: absolute; width: 100%; height: 100%; top: 18%; left: 10%; color: #fff; }
 #eruda #sec5 ul li .text-wrap h4 { margin-bottom: 1.25rem; font-size: 3.75rem; font-weight: 700; }
 #eruda #sec5 ul li .text-wrap p { margin: 0; font-size: 1.25rem; font-weight: 400; line-height: 1.875rem; }
 #eruda #sec5 .section-sub-title { border: solid #141414; border-width: 2px 0; padding: 30px; margin: 6.25rem 0 0; }
+#eruda #sec5 img {width: 100%;height: 100%;object-fit: cover;}
 
 
 /* page - wodo */

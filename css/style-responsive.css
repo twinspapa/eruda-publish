@@ -5,9 +5,11 @@
 
     #gnb .nav-wrap {padding: 30px 160px; transition: background .5s ease;}
 
-    #wedo .nest .item .item-text, #wedo .accordion .inner .inner-title {
+    #wedo .nest .item .item-text,
+    #wedo .accordion .inner .inner-title {
         font-size: 20px;
     }
+
 
 }
 
@@ -50,6 +52,23 @@
   }
   #footer .btn-wrap:nth-child(2) {
       padding-left: 7.5px !important;
+  }
+  #eruda #sec4 p {
+      padding-top: 0;
+      border: 0;
+  }
+
+  #sec4 .symbol {
+      max-width: 70%;
+  }
+
+  #sec4 img {
+      max-width: 50%;
+  }
+
+  #eruda #sec5 li {
+      width: 50vw;
+      height: 50vw;
   }
 
 }
