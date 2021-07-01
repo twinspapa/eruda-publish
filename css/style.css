@@ -197,7 +197,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 #gnb .nav-wrap .nav-list ul li a:hover,
 #gnb .nav-wrap .nav-list ul li a:active { color: #198bb4; }
 #gnb .nav-wrap .logo .logo-w { display: none; }
-#gnb .nav-wrap:hover .logo .logo-b { display: block; }
+#gnb.hero-page .nav-wrap:hover .logo .logo-b, #gnb .nav-wrap:hover .logo .logo-b { display: block; }
 #gnb.hero-page { color: #fff; }
 #gnb.hero-page .nav-wrap .nav-list ul li a { color: #fff; }
 #gnb.hero-page .nav-wrap:hover .nav-list ul li a { color: #141414; }
