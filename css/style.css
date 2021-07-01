@@ -192,18 +192,22 @@ h5.section-sub-title span.necessary { top: -14px; }
 #gnb .nav-wrap .nav-list ul:last-child li {padding-right: 0;}
 
 /* footer */
-#footer {position: relative;padding-top: 18.75rem;padding-bottom: 10.625rem;background: #fff;font-size: 14px;font-weight: 600;line-height: 1.4;color: #141414;}
+#footer {position: relative;padding-top: 18.75rem;padding-bottom: 10.625rem;background: #fff;font-size: 14px;font-weight: 500;line-height: 1.4;color: #141414;}
 #footer a {color: #141414;}
 #footer address a { display: block; }
-#footer .copyright-wrap, #footer .privacy-link-wrap a {font-weight: 600;line-height: 24px;color: #5e5e5e;}
+#footer .copyright-wrap, #footer .privacy-link-wrap a {font-weight: 400;line-height: 24px;color: #5e5e5e;}
 #footer .copyright-wrap p { margin: 0; }
-#footer .btn-wrap { max-width: 270px; }
+#footer .btn-wrap {margin-top: 10px;max-width: 270px;}
 #footer .btn-wrap .btn.btn-custom-2 {font-size: 16px;position: relative;line-height: 60px;padding: 0 30px;text-align: left;color: #fff;}
 #footer .btn-wrap .btn.btn-custom-2 img { position: absolute; top: 22px; right: 30px; }
-#footer .privacy-link-wrap a { margin-right: 0.625rem; }
-#footer .social-link-wrap a { margin-right: 1.25rem; }
+#footer .privacy-link-wrap a {margin-right: 16px;}
+#footer .social-link-wrap a {margin-right: 20px;}
 #footer .custom-box-1 { position: absolute; right: 30px; bottom: 0; }
 #footer .social-link-wrap img { max-height: 31px; height: 3rem; }
+#footer address, #footer a { font-size: 14px; font-weight: 400; margin: 0 0 10px; color: #141414;}
+#footer h4 { margin: 0 0 10px;}
+#footer .social-link-wrap { margin-bottom: 20px;}
+#footer .btn span { font-size: 16px; font-weight: 300;}
 /* -------end layout------- */
 
 
@@ -219,7 +223,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .what-we-do ul li .back p { height: auto; margin: auto 2.5rem; }
 .what-we-do ul li .back p:before {display: inline-block;width: 10px;height: 10px;margin: 0 10px 2px 0;}
 .what-we-do ul li { position: relative; padding: 0.625rem; height: 179px; }
-.what-we-do ul li h4 {margin: auto 0 auto 3.75rem;height: auto;font-size: 20px;font-weight: 600;line-height: 1.875rem;color: #141414;}
+.what-we-do ul li h4 {margin: auto 0 auto 60px;height: auto;font-size: 20px;font-weight: 600;line-height: 1.4;color: #141414;}
 .what-we-do ul li * {height: 100%;font-size: 18px;}
 .what-we-do ul li .back {width: 100%;background: #000;color: #fff;}
 .what-we-do ul li a {display: block;border: 1px solid #141414;overflow: hidden;}
