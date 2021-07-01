@@ -26,8 +26,8 @@ section.container { max-width: 1060px; }
 .transition-5 { transition: all .5s ease; }
 .transition-10-all * { transition: all 1s ease; }
 .clear::after { content: ''; display: block; clear: both; }
-.section-title {font-size: 3.75rem;font-weight: 700;line-height: 80px;margin-bottom: 50px;color: #141414;}
-.section-sub-title {font-weight: 700;font-size: 1.875rem;line-height: 50px;color: #141414;}
+.section-title {font-size: 3.75rem;font-weight: 700;line-height: 5rem;margin-bottom: 50px;color: #141414;}
+.section-sub-title {font-weight: 700;font-size: 1.875rem;line-height: 3.125rem;color: #141414;}
 h5.section-sub-title { font-size: 1.5rem; font-weight: 500; color: #141414;}
 h5.section-sub-title span {margin-left: 16px;font-size: 1rem;font-weight: 300;font-size: 1rem;line-height: 1.4;top:9px;color: #b0b0b0;}
 input[type="text"], input[type="number"], input[type="tel"], input[type="email"] { width: 100%; padding: 8px 0; border-width: 0 0 1px; border-color: #d3d3d3; font-size: 1rem; color: #141414;}
@@ -75,7 +75,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 .item { color: #141414; }
 .item .item-title { font-size: 1.875rem; font-weight: 700; }
 .item .item-number { font-size: 1rem; font-weight: 800; }
-.item .item-dsc {font-size: 1.25rem;line-height: 30px;font-weight: 500;color: #646464;margin: auto 0;}
+.item .item-dsc {font-size: 1.25rem;line-height: 1.875rem;font-weight: 500;color: #646464;margin: auto 0;}
 
 
 /* pagenation */
@@ -143,14 +143,14 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 /* privacy */
 .privacy-wrap { margin-bottom: 0; border-bottom: 1px solid #d5d5d5; }
 .privacy-wrap label { margin-bottom: 0; font-size: 1rem; }
-.privacy-wrap a { position: relative; margin-left: 20px; line-height: 41px; font-size: 1rem; color: #b0b0b0; }
+.privacy-wrap a { position: relative; margin-left: 20px; line-height: 2.5rem; font-size: 1rem; color: #b0b0b0; }
 .privacy-wrap a:hover { color: #198bb4; text-decoration: underline; }
 
 
 /* file attachments */
 .file-upload-wrapper { position: relative; width: 100%; height: 60px; }
-.file-upload-wrapper:after { content: attr(data-text); font-size: 1.125rem; position: absolute; top: 0; left: 0; background: #fafafa; padding: 10px 15px; display: block; width: 78%; pointer-events: none; z-index: 20; height: 60px; line-height: 40px; color: #999; font-weight: 300; border: 1px solid #e9e9e9; }
-.file-upload-wrapper:before { content: '찾아보기'; position: absolute; top: 0; right: 0; display: inline-block; height: 60px; background: #6b6b6b; color: #fff; font-weight: 600; z-index: 25; font-size: 1.125rem; line-height: 60px; width: 21%; text-align: center; text-transform: uppercase; pointer-events: none; }
+.file-upload-wrapper:after { content: attr(data-text); font-size: 1.125rem; position: absolute; top: 0; left: 0; background: #fafafa; padding: 10px 15px; display: block; width: 78%; pointer-events: none; z-index: 20; height: 60px; line-height: 2.5rem; color: #999; font-weight: 300; border: 1px solid #e9e9e9; }
+.file-upload-wrapper:before { content: '찾아보기'; position: absolute; top: 0; right: 0; display: inline-block; height: 60px; background: #6b6b6b; color: #fff; font-weight: 600; z-index: 25; font-size: 1.125rem; line-height: 3.75rem; width: 21%; text-align: center; text-transform: uppercase; pointer-events: none; }
 .file-upload-wrapper:hover:before { background: #198bb4; }
 .file-upload-wrapper input { opacity: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 99; height: 60px; margin: 0; padding: 0; display: block; cursor: pointer; width: 100%; }
 .file-attachments-add { display: flex; width: 100%; height: 60px; color: #b5b5b5; border: 1px solid #d3d3d3; cursor: pointer; }
@@ -219,7 +219,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 #footer .copyright-wrap, #footer .privacy-link-wrap a { font-size: 0.875rem; font-weight: 600; line-height: 24px; color: #5e5e5e; }
 #footer .copyright-wrap p { margin: 0; }
 #footer .btn-wrap { max-width: 270px; }
-#footer .btn-wrap .btn.btn-custom-2 { position: relative; line-height: 60px; padding: 0 30px; text-align: left; }
+#footer .btn-wrap .btn.btn-custom-2 { position: relative; line-height: 3.75rem; padding: 0 30px; text-align: left; }
 #footer .btn-wrap .btn.btn-custom-2 img { position: absolute; top: 22px; right: 30px; }
 #footer .privacy-link-wrap a { margin-right: 10px; }
 #footer .social-link-wrap a { margin-right: 20px; }
@@ -239,7 +239,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .what-we-do ul li .back p { height: auto; margin: auto 40px; }
 .what-we-do ul li .back p:before { display: inline-block; width: 10px; height: 10px; margin: 0 10px 4px 0; }
 .what-we-do ul li { position: relative; padding: 10px; height: 179px; }
-.what-we-do ul li h4 { margin: auto 0 auto 60px; height: auto; font-size: 1.25rem; font-weight: 600; line-height: 30px; color: #141414; }
+.what-we-do ul li h4 { margin: auto 0 auto 60px; height: auto; font-size: 1.25rem; font-weight: 600; line-height: 1.875rem; color: #141414; }
 .what-we-do ul li * { height: 100%; }
 .what-we-do ul li .back {width: 100%;background: #000;color: #fff;}
 .what-we-do ul li a {display: block;border: 1px solid #141414;overflow: hidden;}
@@ -283,13 +283,13 @@ h5.section-sub-title span.necessary { top: -14px; }
 #eruda #sec3 .list-2 { margin-bottom: 200px; }
 #eruda #sec4 .section-title { margin-bottom: 100px; }
 #eruda #sec4 h4 { padding-top: 20px; font-size: 1.25rem; font-weight: 600; color: #141414; border-top: 1px solid #b5b5b5; margin-bottom: 50px; }
-#eruda #sec4 p { padding-top: 20px; margin-bottom: 100px; font-size: 1.25rem; line-height: 30px; font-weight: 500; border-top: 1px solid #b5b5b5; }
+#eruda #sec4 p { padding-top: 20px; margin-bottom: 100px; font-size: 1.25rem; line-height: 1.875rem; font-weight: 500; border-top: 1px solid #b5b5b5; }
 #eruda #sec4 > *:nth-child(2) { margin-bottom: 140px; }
 #eruda #sec4 { margin-bottom: 250px; }
 #eruda #sec5 ul { margin: auto !important; max-width: 1000px; }
 #eruda #sec5 ul li .text-wrap { position: absolute; width: 100%; height: 100%; top: 18%; left: 10%; color: #fff; }
 #eruda #sec5 ul li .text-wrap h4 { margin-bottom: 20px; font-size: 3.75rem; font-weight: 700; }
-#eruda #sec5 ul li .text-wrap p { margin: 0; font-size: 1.25rem; font-weight: 400; line-height: 30px; }
+#eruda #sec5 ul li .text-wrap p { margin: 0; font-size: 1.25rem; font-weight: 400; line-height: 1.875rem; }
 #eruda #sec5 .section-sub-title { border: solid #141414; border-width: 2px 0; padding: 30px; margin: 100px 0 0; }
 
 
@@ -330,10 +330,10 @@ h5.section-sub-title span.necessary { top: -14px; }
 /* page - portfolio-detail */
 #portfolio-detail .brand-name { margin: 85px 0 20px; font-size: 3.75rem; font-weight: 700; line-height: 1; color: #141414; }
 #portfolio-detail .brand-category { font-size: 2.5rem; font-weight: 700; line-height: 1; margin-bottom: 50px; }
-#portfolio-detail .dsc-wrap { margin-bottom: 150px; font-size: 1.25rem; font-weight: 500; line-height: 30px; }
+#portfolio-detail .dsc-wrap { margin-bottom: 150px; font-size: 1.25rem; font-weight: 500; line-height: 1.875rem; }
 #portfolio-detail .dsc-wrap p { margin: 0; }
 #portfolio-detail .counter-wrap .text { padding: 20px 0 10px; font-size: 1.25rem; font-weight: 500; border-top: 2px solid #141414; }
-#portfolio-detail .counter-wrap .number span { font-size: 3.75rem; font-weight: 700; line-height: 50px; }
+#portfolio-detail .counter-wrap .number span { font-size: 3.75rem; font-weight: 700; line-height: 3.125rem; }
 #portfolio-detail .counter-wrap .number { font-size: 0; }
 #portfolio-detail .img-wrap { margin-top: 170px; }
 

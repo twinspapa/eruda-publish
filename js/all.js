@@ -41,11 +41,8 @@ function raito(objClass, raito) {
 
 function re_font_size(element) {
     var vw = $(window).width(),
-        fs = (vw / 1920) * 100;
-
-        if (fs < 50 ) {
-          fs = 50
-        } 
+        x = (1920 - vw) / 1.5,
+        fs = ((1920 - x) / 1920) * 100;
 
     $(element).css('font-size', fs + '%');
 }
