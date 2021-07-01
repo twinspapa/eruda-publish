@@ -26,6 +26,10 @@
         padding-bottom: 50px;
         margin-bottom: 50px;
     }
+    .eruda-portfolio-slider .swiper-button-wrapper {
+        width: 180%;
+        left: -40%;
+    }
 }
 
 @media (min-width: 992px) {
