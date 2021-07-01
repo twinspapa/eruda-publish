@@ -16,7 +16,7 @@ textarea::placeholder { color: #d3d3d3; font-size: 1rem; font-weight: 400; }
 textarea::foucs { border-color: antiquewhite !important; }
 textarea:focus-visible { outline: 0; border-color: #198bb4; }
 img { max-width: 100%; height: auto; }
-section.container { max-width: 1060px; }
+.container {max-width: 1060px !important;}
 /* -------end core------- */
 
 
@@ -292,8 +292,8 @@ h5.section-sub-title span.necessary { top: -14px; }
 #wedo .counter-box .number span:nth-child(1) { position: relative; right: -5px; }
 #wedo .counter-box .counter-box-item > div { border-radius: 100%; background: #298fc2; }
 #wedo .nest .item .item-title {font-size: 2.5rem;margin-bottom: 10px;}
-#wedo .nest .item .item-text {font-size: 1.25rem;font-weight: 500;line-height: 1.5;margin-bottom: 10px;}
-#wedo .nest .item .more { display: inline-block; font-size: 1rem; font-weight: 500; border-bottom: 1px solid #8b8b8b; color: #8b8b8b; line-height: 1; }
+#wedo .nest .item .item-text {font-size: 16px;font-weight: 500;line-height: 1.5;margin-bottom: 10px;}
+#wedo .nest .item .more {display: inline-block;font-size: 16px;font-weight: 500;border-bottom: 1px solid #8b8b8b;color: #8b8b8b;line-height: 1;}
 #wedo .nest .item .btn-close { display: none; position: relative; padding-right: 12px; font-size: 1rem; font-weight: 500; border-bottom: 1px solid #8b8b8b; #wedo color: #8b8b8b; line-height: 1; }
 #wedo .nest .item .btn-close .arrow-top { position: absolute; top: -24px; right: 0; width: 6px; height: 6px; border-color: #8b8b8b; }
 #wedo .accordion li {border-bottom: 1px solid #c8c8c8;cursor: pointer;padding-bottom: 3.125rem;margin-bottom: 3.125rem;}
@@ -301,8 +301,8 @@ h5.section-sub-title span.necessary { top: -14px; }
 #wedo .accordion li.click .nest .more { display: none; }
 #wedo .accordion li.click .nest .btn-close { display: inline-block; }
 #wedo .accordion .inner { overflow: hidden; display: none; margin-top: 6.25rem;}
-#wedo .accordion .inner .inner-title { font-size: 1.25rem; font-weight: 900; }
-#wedo .accordion .inner .inner-text { font-size: 1.25rem; font-weight: 400; }
+#wedo .accordion .inner .inner-title {font-size: 16px;font-weight: 900;}
+#wedo .accordion .inner .inner-text {font-size: 16px;font-weight: 400;}
 #wedo .accordion .inner .inner-item { margin-bottom: 6.25rem; }
 #wedo .accordion .inner .inner-item:last-child { margin-bottom: 0; }
 #wedo .circle .circle-text-wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

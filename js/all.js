@@ -44,5 +44,9 @@ function re_font_size(element) {
         x = (1920 - vw) / 1.5,
         fs = ((1920 - x) / 1920) * 100;
 
+        if (fs < 60) {
+          fs = 60
+        }
+
     $(element).css('font-size', fs + '%');
 }
