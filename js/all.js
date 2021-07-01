@@ -43,5 +43,9 @@ function re_font_size(element) {
     var vw = $(window).width(),
         fs = (vw / 1920) * 100;
 
+        if (fs < 50 ) {
+          fs = 50
+        } 
+
     $(element).css('font-size', fs + '%');
 }
