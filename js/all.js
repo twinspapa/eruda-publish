@@ -4,6 +4,16 @@
             duration: 1000,
         })
 
+        $('#gnb .menu').click(function() {
+            $(this).toggleClass('active');
+            $('.pop-gnb').toggleClass('active');
+        });
+
+        $('#gnb .pop-gnb').click(function() {
+            $('#gnb .menu').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+
         $(window).scroll(function(e) {
           if ($(window).scrollTop() > 0) {
               $("body").addClass("body-scrolled");
@@ -13,7 +23,6 @@
           }
 
         });
-
     });
 })(jQuery);
 
