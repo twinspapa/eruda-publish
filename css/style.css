@@ -260,9 +260,9 @@ h5.section-sub-title span.necessary { top: -14px; }
 
 
 /* page - eruda */
-#eruda #sec1 .hero-image { background-image: url("../images/eruda-hero.png") !important; width: 100%; height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; color: #fff; }
-#eruda #sec1 .hero-image .hero-text-wrap {position: absolute;top: calc(50% - 92px);width: 100%;text-align: center;}
-#eruda #sec1 .hero-image .hero-text { font-size: 30px; font-weight: 600; }
+#eruda #sec1.hero-image { background-image: url("../images/eruda-hero.png") !important; width: 100%; height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; color: #fff; }
+#eruda #sec1.hero-image .hero-text-wrap {position: absolute;top: calc(50% - 92px);width: 100%;text-align: center;}
+#eruda #sec1.hero-image .hero-text { font-size: 30px; font-weight: 600; }
 #eruda #sec1 #countup1 { font-size: 80px; font-weight: 700; font-family: 'Bebas Neue', cursive; }
 #eruda #sec1 #countup1 .text { font-size: 20px; letter-spacing: 1.5px; font-weight: 400; }
 #eruda #sec1 #countup1 .mx-3 { position: relative; right: -2px; font-size: 55px; line-height: 1.3; }
