@@ -32,6 +32,14 @@
     }
 }
 
+@media (max-width: 768px) {
+  #footer .custom-box-1 {
+    position: relative;
+    right: 0;
+    margin-top: 3.125rem;
+  }
+}
+
 @media (min-width: 992px) {
     .mb-lg-100 {
         margin-bottom: 100px;
