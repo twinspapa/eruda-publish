@@ -20,13 +20,24 @@ img { max-width: 100%; height: auto; }
 /* -------end core------- */
 
 
+/* -------font------- */
+.text-type1 {font-size: 3.75rem;}
+.line-height-1 {line-height: 1;}
+
+/* -------End font------- */
+
+/* margin & padding */
+.mb-50 { margin-bottom: 3.125rem; }
+
+
+/* End margin & padding */
 
 /* -------common------- */
 .transition-10 { transition: all 1s ease; }
 .transition-5 { transition: all .5s ease; }
 .transition-10-all * { transition: all 1s ease; }
 .clear::after { content: ''; display: block; clear: both; }
-.section-title {font-size: 3.75rem;font-weight: 700;line-height: 5rem;margin-bottom: 3.125rem;color: #141414;}
+.section-title {font-size: 3.75rem; font-weight: 700; line-height: 5rem; margin-bottom: 3.125rem; color: #141414;}
 .section-sub-title {font-weight: 700;font-size: 1.875rem;line-height: 3.125rem;color: #141414;}
 h5.section-sub-title { font-size: 1.5rem; font-weight: 500; color: #141414;}
 h5.section-sub-title span {margin-left: 1rem;font-size: 1rem;font-weight: 300;font-size: 1rem;line-height: 1.4;top:9px;color: #b0b0b0;}
@@ -214,13 +225,11 @@ h5.section-sub-title span.necessary { top: -14px; }
 /* ------- page------- */
 /* home */
 .about-eruda {margin-bottom: 9.375rem; }
-.about-eruda .section-title {margin-bottom: 3.125rem;}
 .video-container {margin-bottom: 6.25rem;height: 100vh;}
 #home .what-we-do ul li:nth-child(odd) { padding: 10px 10px 10px 15px; }
 #home .what-we-do ul li:nth-child(even) { padding: 10px 15px 10px 10px; }
 .what-we-do { margin-bottom: 18.75rem; }
-.what-we-do h3.section-title { margin-bottom: 6.25rem; }
-.what-we-do p.section-title { margin-bottom: 3.125rem; }
+.what-we-do .section-title { margin-bottom: 6.25rem; }
 .what-we-do ul li a * { transition: all .4s ease; }
 .what-we-do ul li .back p { height: auto; margin: auto 2.5rem; }
 .what-we-do ul li .back p:before {display: inline-block;width: 10px;height: 10px;margin: 0 10px 2px 0;}
@@ -231,8 +240,6 @@ h5.section-sub-title span.necessary { top: -14px; }
 .what-we-do ul li a {display: block;border: 1px solid #141414;overflow: hidden;}
 .what-we-do ul li a:hover .front, .what-we-do ul li a:hover .back { transform: translateY(-100%); }
 .eruda-portfolio { margin-bottom: 18.75rem; }
-.eruda-portfolio .section-title { margin-bottom: 3.125rem; }
-.eruda-office .section-title { margin-bottom: 3.125rem; }
 .eruda-office-slider-pagination {padding: 20px 0;font-size: 16px;color: #141414;}
 .eruda-portfolio-slider {
   margin: auto;
