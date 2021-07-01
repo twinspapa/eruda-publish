@@ -24,6 +24,9 @@
         padding-bottom: 50px;
         margin-bottom: 50px;
     }
+    #gnb .nav-wrap {
+        padding: 30px 30px;
+    }
 
 }
 
