@@ -233,7 +233,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .eruda-portfolio { margin-bottom: 18.75rem; }
 .eruda-portfolio .section-title { margin-bottom: 3.125rem; }
 .eruda-office .section-title { margin-bottom: 3.125rem; }
-.eruda-office-slider-pagination {padding: 1.25rem 0;font-size: 0.875rem;color: #141414;}
+.eruda-office-slider-pagination {padding: 20px 0;font-size: 16px;color: #141414;}
 .eruda-portfolio-slider {
   margin: auto;
   width: 55.21vw;
