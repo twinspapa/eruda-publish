@@ -1,7 +1,7 @@
 /* -------core------- */
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;/* font-family: var(--font-global); */width: 100vw;font-size: 100%;font-weight: 400; /*500*/letter-spacing: -0.00208em;line-height: 1.61;word-break: keep-all;overflow-x: hidden;}
-select, input { outline: 0;}
+select, input {outline: 0;background: transparent;}
 option {color: #d3d3d3;font-size: 0.875rem;}
 input::placeholder { color: #d3d3d3; font-size: 16px; font-weight: 400; }
 input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus { border-color: #198bb4 !important; }
