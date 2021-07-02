@@ -168,7 +168,7 @@
 
   .container { max-width: 1030px; }
 
-  #gnb .nav-wrap {padding: 30px 160px; transition: background .5s ease;}
+  #gnb .nav-wrap {padding: 45px 160px 25px;transition: background .5s ease;}
 
   #wedo .nest .item .item-text,
   #wedo .accordion .inner .inner-title {
