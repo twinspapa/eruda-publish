@@ -283,7 +283,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 
 .swiper-slide-container {text-align: center;font-size: 1.125rem;background: #fff;width: 100%;/* height:100%; *//* max-width: 52.1vw !important; */margin:auto;}
 
-.eruda-portfolio-slider .swiper-slide {width: 60vw;margin: 0 1.3vw;}
+.eruda-portfolio-slider .swiper-slide {position: relative;width: 60vw;margin: 0 1.3vw;}
 .eruda-portfolio-slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next {background: none;}
 .eruda-portfolio-slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {background: none;}
 .eruda-portfolio-slider .swiper-button-wrapper {position: absolute;top: 50%;left: -20%;right: -30px;padding: 0 30px;z-index: 99;width: 140%;}
@@ -433,4 +433,22 @@ h5.section-sub-title span.necessary { top: -14px; }
 }
 .custom-select {
     font-size: 16px;
+}
+
+
+
+.pagenation-wrap img {
+    position: relative;
+    top: -2px;
+    height: 8px;
+}
+#home .eruda-portfolio-slider .swiper-slide-next:after, #home .eruda-portfolio-slider .swiper-slide-prev:after {
+    content: '';
+    display:block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+    background: rgba(0,0,0,.5);
 }
