@@ -199,7 +199,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .body-scrolled #gnb.hero-page .nav-wrap .nav-list ul li a { color: #141414; }
 #gnb .nav-wrap .nav-list ul:last-child li {padding-right: 0;}
 #gnb .pop-gnb {position: fixed;top: -200%;left: 0;width: 100%;height: 100vh;background-color: rgb(0,0,0,.95);text-align: center;transition: all .5s ease;}
-#gnb .pop-gnb.active {transform: translateY(200%);}
+#gnb .pop-gnb.active {top: 0;}
 #gnb .pop-gnb .pop-gnb-wrap { padding: 6.25rem; text-align: left; }
 #gnb .pop-gnb .pop-gnb-wrap ul li a { margin-bottom: 2.5rem; color: #fff; font-size: 2.188rem; font-weight: 500; line-height: 1; }
 #gnb .pop-gnb .pop-gnb-wrap ul li.one a { margin-bottom: 2.5rem; font-size: 3.75rem; font-weight: 700; }
