@@ -203,7 +203,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 #gnb .pop-gnb .pop-gnb-wrap { padding: 6.25rem; text-align: left; }
 #gnb .pop-gnb .pop-gnb-wrap ul li a { margin-bottom: 2.5rem; color: #fff; font-size: 2.188rem; font-weight: 500; line-height: 1; }
 #gnb .pop-gnb .pop-gnb-wrap ul li.one a { margin-bottom: 2.5rem; font-size: 3.75rem; font-weight: 700; }
-#gnb .pop-gnb .pop-gnb-wrap ul { margin-bottom: 6.25rem; }
+#gnb .pop-gnb .pop-gnb-wrap ul {margin-bottom: 5.25rem;}
 #gnb .pop-gnb .pop-gnb-wrap ul li { margin-bottom: 1.875rem; }
 #gnb .pop-gnb .pop-gnb-wrap ul li:hover a,#gnb .pop-gnb .pop-gnb-wrap ul li a.active { color: #198bb4; }
 #gnb .nav-wrap .nav-list ul li.two a { font-weight: 500; margin-bottom: 12px; }
@@ -593,3 +593,4 @@ h5.section-sub-title span.necessary { top: -14px; }
 main {
     overflow-x: hidden;
 }
+body.popActive {overflow: hidden;}

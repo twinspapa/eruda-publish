@@ -9,11 +9,13 @@
         $('#gnb .menu').click(function() {
             $(this).toggleClass('active');
             $('.pop-gnb').toggleClass('active');
+            $('body').toggleClass('popActive');
         });
 
         $('#gnb .pop-gnb').click(function() {
             $('#gnb .menu').toggleClass('active');
             $(this).toggleClass('active');
+            $('body').toggleClass('popActive');
         });
 
         $(window).scroll(function(e) {
