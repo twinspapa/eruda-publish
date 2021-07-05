@@ -270,7 +270,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .what-we-do ul li h4 {margin: auto 0 auto 60px;height: auto;font-size: 20px;font-weight: 600;line-height: 1.4;color: #141414;}
 .what-we-do ul li * {height: 100%;font-size: 18px;}
 .what-we-do ul li .back {width: 100%;background: #000;color: #fff;}
-.what-we-do ul li a { display: block; border: 1px solid #141414; overflow-x: hidden; }
+.what-we-do ul li a {display: block;border: 1px solid #141414;overflow: hidden;}
 .what-we-do ul li a:hover .front, .what-we-do ul li a:hover .back { transform: translateY(-100%); }
 .eruda-portfolio {margin-bottom: 18.75rem;overflow-x: hidden;}
 .eruda-office-slider-pagination {padding: 20px 0;font-size: 16px;color: #141414;}
