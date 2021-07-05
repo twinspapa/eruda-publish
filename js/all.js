@@ -28,7 +28,7 @@
         });
 
         AOS.init({
-            duration: 500,
+            duration: 1500,
         })
     });
 })(jQuery);
