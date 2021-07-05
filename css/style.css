@@ -1,6 +1,6 @@
 /* -------core------- */
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
-body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;/* font-family: var(--font-global); */width: 100vw;font-size: 100%;font-weight: 400; /*500*/letter-spacing: -0.00208em;line-height: 1.61;word-break: keep-all;overflow-x: hidden;}
+body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;/* font-family: var(--font-global); */width: 100vw;font-size: 100%;font-weight: 400; /*500*/letter-spacing: -0.00208em;line-height: 1.61;word-break: keep-all;overflow-x: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);}
 select, input {outline: 0;background: transparent;}
 option {color: #d3d3d3;font-size: 0.875rem;}
 input::placeholder { color: #d3d3d3; font-size: 16px; font-weight: 400; }
@@ -212,8 +212,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 }
 
 /* hambuger */
-.menu-ico{overflow: hidden;width:40px;height:40px;-webkit-border-radius:9%;-moz-border-radius:9%;border-radius:9%;position: absolute;top: 50%;margin-top: -19px;right: 11px;cursor: pointer;}
-.move-left{}
+.menu-ico { overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); width: 40px; height: 40px; -webkit-border-radius: 9%; -moz-border-radius: 9%; border-radius: 9%; position: absolute; top: 50%; margin-top: -19px; right: 11px; cursor: pointer; }
 .menu-ico.no-border{ border: none; }
 
 .hero-page .menu-ico span{height: 4%;width:80%;margin:10% auto;background: rgba(255,255,255,.8);display:block;position:relative;top:50%;margin-top:-5%;font-size: 0;}
@@ -271,7 +270,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .what-we-do ul li h4 {margin: auto 0 auto 60px;height: auto;font-size: 20px;font-weight: 600;line-height: 1.4;color: #141414;}
 .what-we-do ul li * {height: 100%;font-size: 18px;}
 .what-we-do ul li .back {width: 100%;background: #000;color: #fff;}
-.what-we-do ul li a {display: block;border: 1px solid #141414;overflow: hidden;}
+.what-we-do ul li a { display: block; border: 1px solid #141414; overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); }
 .what-we-do ul li a:hover .front, .what-we-do ul li a:hover .back { transform: translateY(-100%); }
 .eruda-portfolio { margin-bottom: 18.75rem; }
 .eruda-office-slider-pagination {padding: 20px 0;font-size: 16px;color: #141414;}
@@ -324,7 +323,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 #eruda #sec5 ul li .text-wrap { position: absolute; width: 100%; height: 100%; top: 18%; left: 10%; color: #fff; }
 #eruda #sec5 ul li .text-wrap h4 { margin-bottom: 1.25rem; font-size: 3.75rem; font-weight: 700; }
 #eruda #sec5 ul li .text-wrap p { margin: 0; font-size: 1.25rem; font-weight: 400; line-height: 1.875rem; }
-#eruda #sec5 .section-sub-title {border: solid #141414;border-width: 2px 0;padding: 30px;margin: 6.25rem 0 0;overflow: hidden;}
+#eruda #sec5 .section-sub-title {border: solid #141414;border-width: 2px 0;padding: 30px;margin: 6.25rem 0 0;overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);}
 #eruda #sec5 img {width: 100%;height: 100%;object-fit: cover;}
 
 
@@ -354,7 +353,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 
 
 /* page - portfolio */
-#portfolio .portfolio-category ul li { position: relative; padding: 0; overflow: hidden;}
+#portfolio .portfolio-category ul li { position: relative; padding: 0; overflow: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);}
 #portfolio .portfolio-category ul li a > div {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.5);opacity: 0;z-index: 10;}
 #portfolio .portfolio-category ul li a > div h3 { margin: auto; font-size: 1.25rem; font-weight: 600; color: #fff;}
 #portfolio .portfolio-category ul li:hover a > div { opacity: 1;}
@@ -579,6 +578,10 @@ h5.section-sub-title span.necessary { top: -14px; }
     width: 100%;
     height: 100%;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
     border-bottom: 4px solid #141414;
 }
 
