@@ -163,7 +163,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .swiper-progress-bar .slide_progress-bar { position: absolute; height: 2px; background: rgba(0, 0, 0, 0.3); width: auto; clear: both; opacity: 0; bottom: 33px; left: 40px; right: 0; }
 .swiper-progress-bar .slide_progress-bar:after { position: absolute; top: 0; left: 0; background: #000; height: 100%; width: 0; content: ""; }
 .swiper-progress-bar.active .slide_progress-bar { opacity: 1; }
-.swiper-progress-bar.animate .slide_progress-bar:after { transition: width linear; transition-delay: unset; width: 100%; transition-duration: 5s; }
+.swiper-progress-bar.animate .slide_progress-bar:after { transition: width linear; transition-delay: unset; width: 100%; transition-duration: 3s; }
 .swiper-button-prev { display: inline-block; width: 45px !important; height: 45px !important; border: 1px solid #fff; border-radius: 50%; }
 .swiper-button-prev:after { content: ''; display: inline-block; margin-top: 17px; margin-left: 19px; width: 10px; height: 10px; border-top: 1px solid #fff; border-right: 1px solid #fff; -moz-transform: rotate(-135deg); -webkit-transform: rotate(-135deg); transform: rotate(-135deg); }
 .swiper-button-next { display: inline-block; width: 45px !important; height: 45px !important; border: 1px solid #fff; border-radius: 50%; }
