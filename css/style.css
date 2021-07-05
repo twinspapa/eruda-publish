@@ -594,3 +594,6 @@ h5.section-sub-title span.necessary { top: -14px; }
     margin-left: 5px;
     font-size: 12px;
 }
+main {
+    overflow-x: hidden;
+}
