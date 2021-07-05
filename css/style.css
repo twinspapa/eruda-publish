@@ -1,6 +1,6 @@
 /* -------core------- */
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
-body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;/* font-family: var(--font-global); */width: 100vw;font-size: 100%;font-weight: 400; /*500*/letter-spacing: -0.00208em;line-height: 1.61;word-break: keep-all;overflow-x: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0);}
+body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;/* font-family: var(--font-global); */width: 100vw;font-size: 100%;font-weight: 400; /*500*/letter-spacing: -0.00208em;line-height: 1.61;word-break: keep-all;}
 select, input {outline: 0;background: transparent;}
 option {color: #d3d3d3;font-size: 0.875rem;}
 input::placeholder { color: #d3d3d3; font-size: 16px; font-weight: 400; }
@@ -593,77 +593,4 @@ h5.section-sub-title span.necessary { top: -14px; }
 #wedo .nest .item .btn-close i {
     margin-left: 5px;
     font-size: 12px;
-}
-
-html {
-    overflow-x: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-}
-
-// Hero container
-.hero {
-  position: relative;
-  display: block;
-  width: 100%;
-  min-height: 620px;
-  background-image: url('https://images.unsplash.com/photo-1541442742947-9aa59ec5f060?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2fc0cfa4e19cd17713ce4be08920076&auto=format&fit=crop&w=3026&q=80');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  z-index: 0;
-  overflow: hidden;
-  margin-bottom: 80px;
-}
-
-// Color overlay
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: background-color .1s linear;
-  z-index: 3; // video is z-index: -1;
-  background-color: green;
-  opacity: 0.75;
-}
-
-// Video
-.hero__video {
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  display: none; // don't display on mobile
-}
-
-// Hide or show custom poster background on mobile devices with media queries
-@media only screen and (max-width: 480px) {
-	// mobile styles go here
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-	// tablet styles go here
-}
-
-@media only screen and (min-width: 769px) {
-	// desktop styles go here
-  .hero {
-    // Remove background image
-    background-image: unset;
-  }
-  .hero__video {
-    // Show video
-    display: block;
-  }
 }
