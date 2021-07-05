@@ -30,6 +30,40 @@
         AOS.init({
             duration: 1500,
         })
+
+    });
+    $("#formProposalDown").validator();
+
+    // when the form is submitted
+    $("#formProposalDown").on("submit", function(e) {
+      // if the validator does not prevent form submit
+      if (!e.isDefaultPrevented()) {
+        var url = "contact.php";
+
+        // FOR CODEPEN DEMO I WILL PROVIDE THE DEMO OUTPUT HERE, download the PHP files from
+        // https://bootstrapious.com/p/how-to-build-a-working-bootstrap-ad_contact
+
+        var messageAlert = "alert-success";
+        var messageText = "문의 등록이 완료 되었습니다.";
+
+        // let's compose Bootstrap alert box HTML
+        var alertBox =
+          '<div class="alert ' +
+          messageAlert +
+          ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+          messageText +
+          "</div>";
+
+        // If we have messageAlert and messageText
+        if (messageAlert && messageText) {
+          // inject the alert to .messages div in our form
+          $("#ad_contact").find(".messages").html(alertBox);
+          // empty the form
+          $("#ad_contact")[0].reset();
+        }
+
+        return false;
+      }
     });
 })(jQuery);
 
