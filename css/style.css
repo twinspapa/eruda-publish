@@ -261,7 +261,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 .video-container {margin-bottom: 6.25rem;height: 100vh;}
 #home .what-we-do ul li:nth-child(odd) { padding: 10px 10px 10px 15px; }
 #home .what-we-do ul li:nth-child(even) { padding: 10px 15px 10px 10px; }
-.what-we-do { margin-bottom: 18.75rem; }
+.what-we-do {margin-bottom: 18.75rem;overflow-x: hidden;-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-webkit-transform: translate3d(0, 0, 0);-moz-transform: translate3d(0, 0, 0);}
 .what-we-do .section-title { margin-bottom: 6.25rem; }
 .what-we-do ul li a * { transition: all .4s ease; }
 .what-we-do ul li .back p { height: auto; margin: auto 2.5rem; }
@@ -593,4 +593,12 @@ h5.section-sub-title span.necessary { top: -14px; }
 #wedo .nest .item .btn-close i {
     margin-left: 5px;
     font-size: 12px;
+}
+
+html {
+    overflow-x: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
