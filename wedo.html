@@ -486,9 +486,12 @@
                         $(this).toggleClass('click');
                     }
                     $(".accordion li").not($(this)).removeClass("click");
-                    $('html, body').animate({
-                        scrollTop: $(".accordion li.click").offset().top - gnbHeight
-                    }, 400);
+                    setTimeout(function() {
+                        $('html, body').animate({
+                            scrollTop: $(".accordion li.click").offset().top - gnbHeight
+                        }, 400);
+                    }, 500);
+
                 });
 
                 $(window).on('resize', function() {
