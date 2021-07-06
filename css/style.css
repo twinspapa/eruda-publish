@@ -829,9 +829,10 @@ body.popActive {overflow: hidden;}
 }
 
 .agree-page pre {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     white-space: pre-wrap;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }
 
 .alert {
