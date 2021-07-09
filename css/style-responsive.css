@@ -1,60 +1,3 @@
-@media (max-width: 991px) {
-    .form-group .col-form-lable {
-        border: 0;
-    }
-    #recruit .img-wrap .img-1, #recruit .img-wrap .img-6 {
-        width: 80%;
-    }
-    .item .item-dsc br {
-        display: none;
-    }
-    #portfolio .portfolio-category ul li {
-        height: 50vw;
-    }
-    #portfolio .portfolio-category ul li a {
-        height: 100%;
-    }
-    .accordion li.click {
-        padding-bottom: 50px;
-        margin-bottom: 50px;
-    }
-
-}
-
-@media (max-width: 768px) {
-  #home .what-we-do ul li {padding: 0 15px !important;}
-
-  #eruda #sec4 p {
-      padding-top: 0;
-      border: 0;
-  }
-
-  #sec4 .symbol {
-      max-width: 70%;
-  }
-
-  #sec4 img {
-      max-width: 50%;
-  }
-
-  #eruda #sec5 li {
-      width: 50vw;
-      height: 50vw;
-  }
-
-}
-
-@media (min-width: 992px) {
-    .mb-lg-100 {
-        margin-bottom: 100px;
-    }
-    .pb-lg-100 {
-        padding-bottom: 100px;
-    }
-}
-
-
-
 /* .sm : Small devices (phones, < 576px) */
 .fc-141414 { color: #141414; }
 .fc-5e5e5e { color: #5e5e5e; }
@@ -163,20 +106,21 @@
   .mt-sm-250{ margin-top: 250px; }
   .mt-sm-300{ margin-top: 300px; }
 
+  .board-teb-menu > div a { padding: 25px 0;}
+  .board-type-2.list .item:nth-child(1) > div, .board-type-2.list .item:nth-child(2) > div { border-top: 1px solid #141414; }
+
+  #footer { padding-top: 300px; padding-bottom: 160px; }
   #footer .btn-wrap { margin-top: 10px; max-width: 270px; }
 
   #home .hero-title { height: 100vh; }
   #home .video-container { height: 100vh; }
   #home .turn-box { height: 180px; }
   #eruda #sec1.hero-image { height: 100vh; }
-  #eruda #sec1.hero-image .hero-text-wrap {
-    top: calc(50% - 61px);
-}
+  #eruda #sec1.hero-image .hero-text-wrap { top: calc(50% - 61px); }
   #wedo .rolling-text .box {width: 530px;height: 62px;}
-  .board-teb-menu > div a { padding: 25px 0;}
-  .board-type-2.list .item:nth-child(1) > div, .board-type-2.list .item:nth-child(2) > div {
-      border-top: 1px solid #141414;
-  }
+  #wedo .accordion li { margin-bottom: 50px; padding-bottom: 50px; }
+  #wedo .accordion li.click { margin-bottom: 100px; padding-bottom: 100px; }
+  #wedo .accordion li .inner { margin-top: 100px;}
 }
 /* End Small devices (landscape phones, 576px and up) */
 
@@ -229,9 +173,9 @@
   .mt-md-250{ margin-top: 250px; }
   .mt-md-300{ margin-top: 300px; }
 
-  #eruda #sec1.hero-image .hero-text-wrap {
-    top: calc(50% - 80px);
-}
+  #eruda #sec1.hero-image .hero-text-wrap { top: calc(50% - 80px); }
+  #portfolio .portfolio-category ul li { height: auto;}
+  #board-detail .board-wrap { margin-bottom: 100px; font-size: 18px;}
 }
 /* End Medium devices (tablets, 768px and up) */
 
