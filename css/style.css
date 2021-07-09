@@ -914,6 +914,7 @@ div#anchor1 {
  */
 .eruda-portfolio {
     position: relative;
+    overflow: hidden;
 }
 a {
     color: inherit;
