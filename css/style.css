@@ -1,5 +1,6 @@
 /* -------core------- */
 ::-webkit-scrollbar { display: none; width:0;}
+html {scroll-behavior: smooth;}
 body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;width: 100vw;font-size: 100%; /*500*/line-height: 1;word-break: keep-all;-ms-overflow-style: none;}
 select, input {outline: 0;background: transparent;}
 option {color: #d3d3d3;font-size: 0.875rem;}
