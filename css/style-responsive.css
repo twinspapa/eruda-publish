@@ -18,14 +18,11 @@
         padding-bottom: 50px;
         margin-bottom: 50px;
     }
-    .eruda-portfolio-slider .swiper-button-wrapper {
-        width: 180%;
-        left: -40%;
-    }
+
 }
 
 @media (max-width: 768px) {
-  #home .what-we-do ul li { padding: 7.5px 15px !important; height: 179px; }
+  #home .what-we-do ul li {padding: 0 15px !important;}
 
   #eruda #sec4 p {
       padding-top: 0;
@@ -82,6 +79,8 @@
 .fw-500{ font-weight: 500; } /* Mdeium */
 .fw-600{ font-weight: 600; } /* Semi Bold */
 .fw-700{ font-weight: 700; } /* Bold */
+.fw-800{ font-weight: 800; }
+.fw-900{ font-weight: 900; }
 
 .mb-10{ margin-bottom: 10px; }
 .mb-20{ margin-bottom: 20px; }
@@ -97,6 +96,21 @@
 .mb-200{ margin-bottom: 200px; }
 .mb-250{ margin-bottom: 250px; }
 .mb-300{ margin-bottom: 300px; }
+
+.mt-10{ margin-top: 10px; }
+.mt-20{ margin-top: 20px; }
+.mt-30{ margin-top: 30px; }
+.mt-40{ margin-top: 40px; }
+.mt-50{ margin-top: 50px; }
+.mt-60{ margin-top: 60px; }
+.mt-70{ margin-top: 70px; }
+.mt-80{ margin-top: 80px; }
+.mt-90{ margin-top: 90px; }
+.mt-100{ margin-top: 100px; }
+.mt-150{ margin-top: 150px; }
+.mt-200{ margin-top: 200px; }
+.mt-250{ margin-top: 250px; }
+.mt-300{ margin-top: 300px; }
 
 .pt-200{ padding-top: 200px; }
 
@@ -134,28 +148,42 @@
   .mb-sm-250{ margin-bottom: 250px; }
   .mb-sm-300{ margin-bottom: 300px; }
 
-  #home .hero-title h1 {
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      margin-top: -120px;
-  }
+  .mt-sm-10{ margin-top: 10px; }
+  .mt-sm-20{ margin-top: 20px; }
+  .mt-sm-30{ margin-top: 30px; }
+  .mt-sm-40{ margin-top: 40px; }
+  .mt-sm-50{ margin-top: 50px; }
+  .mt-sm-60{ margin-top: 60px; }
+  .mt-sm-70{ margin-top: 70px; }
+  .mt-sm-80{ margin-top: 80px; }
+  .mt-sm-90{ margin-top: 90px; }
+  .mt-sm-100{ margin-top: 100px; }
+  .mt-sm-150{ margin-top: 150px; }
+  .mt-sm-200{ margin-top: 200px; }
+  .mt-sm-250{ margin-top: 250px; }
+  .mt-sm-300{ margin-top: 300px; }
 
-  .mb-sm-100 { margin-bottom: 6.25rem; }
-  .mb-sm-50 { margin-bottom: 3.125rem; }
-  .section-title {font-size: 3.75rem; line-height: 5rem; margin-bottom: 3.125rem;}
-  #footer .btn-wrap {
-      margin-top: 10px;
-      max-width: 270px;
-  }
+  #footer .btn-wrap { margin-top: 10px; max-width: 270px; }
 
+  #home .hero-title { height: 100vh; }
+  #home .video-container { height: 100vh; }
+  #home .turn-box { height: 180px; }
+  #eruda #sec1.hero-image { height: 100vh; }
+  #eruda #sec1.hero-image .hero-text-wrap {
+    top: calc(50% - 61px);
+}
   #wedo .rolling-text .box {width: 530px;height: 62px;}
+  .board-teb-menu > div a { padding: 25px 0;}
+  .board-type-2.list .item:nth-child(1) > div, .board-type-2.list .item:nth-child(2) > div {
+      border-top: 1px solid #141414;
+  }
 }
 /* End Small devices (landscape phones, 576px and up) */
 
 
 /* .md : Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .fs-md-80{ font-size: 80px;}
   .fs-md-60{ font-size: 60px;}
   .fs-md-40{ font-size: 40px;}
   .fs-md-30{ font-size: 30px;}
@@ -185,6 +213,25 @@
   .mb-md-200{ margin-bottom: 200px; }
   .mb-md-250{ margin-bottom: 250px; }
   .mb-md-300{ margin-bottom: 300px; }
+
+  .mt-md-10{ margin-top: 10px; }
+  .mt-md-20{ margin-top: 20px; }
+  .mt-md-30{ margin-top: 30px; }
+  .mt-md-40{ margin-top: 40px; }
+  .mt-md-50{ margin-top: 50px; }
+  .mt-md-60{ margin-top: 60px; }
+  .mt-md-70{ margin-top: 70px; }
+  .mt-md-80{ margin-top: 80px; }
+  .mt-md-90{ margin-top: 90px; }
+  .mt-md-100{ margin-top: 100px; }
+  .mt-md-150{ margin-top: 150px; }
+  .mt-md-200{ margin-top: 200px; }
+  .mt-md-250{ margin-top: 250px; }
+  .mt-md-300{ margin-top: 300px; }
+
+  #eruda #sec1.hero-image .hero-text-wrap {
+    top: calc(50% - 80px);
+}
 }
 /* End Medium devices (tablets, 768px and up) */
 
@@ -221,8 +268,25 @@
   .mb-lg-250{ margin-bottom: 250px; }
   .mb-lg-300{ margin-bottom: 300px; }
 
+  .mt-lg-10{ margin-top: 10px; }
+  .mt-lg-20{ margin-top: 20px; }
+  .mt-lg-30{ margin-top: 30px; }
+  .mt-lg-40{ margin-top: 40px; }
+  .mt-lg-50{ margin-top: 50px; }
+  .mt-lg-60{ margin-top: 60px; }
+  .mt-lg-70{ margin-top: 70px; }
+  .mt-lg-80{ margin-top: 80px; }
+  .mt-lg-90{ margin-top: 90px; }
+  .mt-lg-100{ margin-top: 100px; }
+  .mt-lg-150{ margin-top: 150px; }
+  .mt-lg-200{ margin-top: 200px; }
+  .mt-lg-250{ margin-top: 250px; }
+  .mt-lg-300{ margin-top: 300px; }
+
   #footer .custom-box-1 { position: absolute; right: 30px; bottom: 0; }
   #footer .btn-wrap { max-width: 270px; }
+  #gnb .nav-wrap { justify-content: space-between !important; }
+  #gnb .nav-wrap {padding: 45px 8.5vw 25px;transition: background .5s ease;}
 }
 /* .fs : End Large devices (desktops, 992px and up) */
 
@@ -259,14 +323,27 @@
   .mb-xl-250{ margin-bottom: 250px; }
   .mb-xl-300{ margin-bottom: 300px; }
 
+  .mt-xl-10{ margin-top: 10px; }
+  .mt-xl-20{ margin-top: 20px; }
+  .mt-xl-30{ margin-top: 30px; }
+  .mt-xl-40{ margin-top: 40px; }
+  .mt-xl-50{ margin-top: 50px; }
+  .mt-xl-60{ margin-top: 60px; }
+  .mt-xl-70{ margin-top: 70px; }
+  .mt-xl-80{ margin-top: 80px; }
+  .mt-xl-90{ margin-top: 90px; }
+  .mt-xl-100{ margin-top: 100px; }
+  .mt-xl-150{ margin-top: 150px; }
+  .mt-xl-200{ margin-top: 200px; }
+  .mt-xl-250{ margin-top: 250px; }
+  .mt-xl-300{ margin-top: 300px; }
+
   .container { max-width: 1030px; }
 
-  #gnb .nav-wrap {padding: 45px 160px 25px;transition: background .5s ease;}
-
   #wedo .nest .item .item-text,
-  #wedo .accordion .inner .inner-title {
-      font-size: 20px;
-  }
+  #wedo .accordion .inner .inner-title { font-size: 20px; }
+  .eruda-portfolio-slider .swiper-button-wrapper { left: 12vw; right: 12vw; }
+
 }
 /* End X-Large devices (large desktops, 1200px and up) */
 
@@ -302,5 +379,20 @@
   .mb-xxl-200{ margin-bottom: 200px; }
   .mb-xxl-250{ margin-bottom: 250px; }
   .mb-xxl-300{ margin-bottom: 300px; }
+
+  .mt-xxl-10{ margin-top: 10px; }
+  .mt-xxl-20{ margin-top: 20px; }
+  .mt-xxl-30{ margin-top: 30px; }
+  .mt-xxl-40{ margin-top: 40px; }
+  .mt-xxl-50{ margin-top: 50px; }
+  .mt-xxl-60{ margin-top: 60px; }
+  .mt-xxl-70{ margin-top: 70px; }
+  .mt-xxl-80{ margin-top: 80px; }
+  .mt-xxl-90{ margin-top: 90px; }
+  .mt-xxl-100{ margin-top: 100px; }
+  .mt-xxl-150{ margin-top: 150px; }
+  .mt-xxl-200{ margin-top: 200px; }
+  .mt-xxl-250{ margin-top: 250px; }
+  .mt-xxl-300{ margin-top: 300px; }
 }
 /* End XX-Large devices (larger desktops, 1400px and up) */
