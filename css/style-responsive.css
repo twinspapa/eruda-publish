@@ -342,7 +342,7 @@
 
   #wedo .nest .item .item-text,
   #wedo .accordion .inner .inner-title { font-size: 20px; }
-  .eruda-portfolio-slider .swiper-button-wrapper { left: 12vw; right: 12vw; }
+  .eruda-portfolio-slider .swiper-button-wrapper {left: 12vw;right: 12vw;}
 
 }
 /* End X-Large devices (large desktops, 1200px and up) */

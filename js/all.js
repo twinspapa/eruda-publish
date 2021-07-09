@@ -1,10 +1,11 @@
 (function($){
-    $(document).ready(function() {
-        re_font_size('html');
+    AOS.init({
+      easing: 'ease',
+      duration: 1500
+    });
 
-        $(window).resize(function() {
-            re_font_size('html');
-        });
+    $(document).ready(function() {
+        history.scrollRestoration = "manual";
 
         $('#gnb .menu').click(function() {
             $(this).toggleClass('active');
@@ -20,16 +21,14 @@
 
 
         $(window).scroll(function(e) {
-          if ($(window).scrollTop() > 0) {
-              $("body").addClass("body-scrolled");
-          }
-          else if ($(window).scrollTop() === 0){
-              $("body").removeClass("body-scrolled");
-          }
-        });
+            var wTop = $(window).scrollTop();
 
-        AOS.init({
-            duration: 1500,
+            if (wTop > 0) {
+                $("body").addClass("body-scrolled");
+            }
+            else if (wTop === 0){
+                $("body").removeClass("body-scrolled");
+            }
         });
 
         $('#option-select').on('change', function() {
@@ -74,18 +73,6 @@ function raito(objClass, raito) {
         objHeight = objWidth * raito;
 
     obj.css('height', objHeight + 'px')
-}
-
-function re_font_size(element) {
-    var vw = $(window).width(),
-        x = (1920 - vw) / 1.5,
-        fs = ((1920 - x) / 1920) * 100;
-
-        if (fs < 60) {
-          fs = 60
-        }
-
-    $(element).css('font-size', fs + '%');
 }
 
 function jbSubmit(event) {
