@@ -2,7 +2,8 @@
 ::-webkit-scrollbar {display: none;}
 body {-ms-overflow-style: none;}
 body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;width: 100vw;font-size: 100%; /*500*/line-height: 1;word-break: keep-all;-ms-overflow-style: none;}
-select, input {outline: 0;background: transparent;border-radius: 0;}
+select, input {outline: 0;background: transparent;border-radius: 0;-webkit-appearance: none;-webkit-border-radius: 0;}
+input:checked[type="checkbox"] {background-color:#fff;-webkit-appearance:checkbox;}
 option {color: #d3d3d3;font-size: 0.875rem;}
 input::placeholder { color: #d3d3d3; font-size: 16px; font-weight: 400; }
 input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus { border-color: #198bb4 !important; }
@@ -107,8 +108,8 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 .form-group-2 { display: block; margin-bottom: 0.938rem; }
 .form-group-2 input {padding: 0;height: initial;width: initial;margin-bottom: 0;cursor: pointer;position: absolute;top: 12px;left: 3px;opacity: 0;}
 .form-group-2 label {position: relative;cursor: pointer;font-size: 16px;color: #141414;}
-.form-group-2 label:before { content:''; -webkit-appearance: none; background-color: transparent; border: 1px solid #d3d3d3; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); padding: 9px; display: inline-block; position: relative; vertical-align: middle; cursor: pointer; margin-right: 5px; top: -2px; }
-.form-group-2 input:checked + label:after { content: ''; display: block; position: absolute; top: 4px; left: 7px; width: 6px; height: 14px; border: solid #198bb4; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.form-group-2 label:before {content:'';-webkit-appearance: none;background-color: transparent;border: 1px solid #d3d3d3;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);padding: 9px;display: inline-block;position: relative;vertical-align: middle;cursor: pointer;margin-right: 5px;top: -2px;}
+.form-group-2 input:checked + label:after {content: '';display: block;position: absolute;top: 50%;margin-top: -8px;left: 7px;width: 6px;height: 14px;border: solid #198bb4;border-width: 0 2px 2px 0;transform: rotate(45deg);}
 
 
 /* btn */
@@ -122,9 +123,8 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 .btn.btn-2 .arrow-right { position: absolute; top: -17px; right: 14px; width: 8px; height: 8px; border-color: #fff; border-width: 1px; }
 
 /* privacy */
-.privacy-wrap { margin-bottom: 0; border-bottom: 1px solid #d5d5d5; }
+.privacy-wrap {margin-bottom: 0;border-bottom: 1px solid #d5d5d5;line-height: 41px;}
 .privacy-wrap label { margin-bottom: 0; font-size: 16px; }
-.privacy-wrap a { position: relative; margin-left: 1.25rem; line-height: 2.5rem; font-size: 16px; color: #b0b0b0; }
 .privacy-wrap a:hover { color: #198bb4; text-decoration: underline; }
 
 
@@ -140,7 +140,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 
 
 /* custon-form-group */
-.form-group .col-form-lable { font-size: 16px; line-height: 41px; border-bottom: 1px solid #d3d3d3; }
+.form-group .col-form-lable {line-height: 41px;}
 .form-group-1 { position: relative; }
 .static-placeholder { position: absolute; left: 210px; font-weight: 300; font-size: 16px; top:9px; color: #b0b0b0; }
 .necessary {display: inline-block;position: relative;top: -7px;font-size: 14px !important;height: 10px;color: #f00 !important;margin: 0 !important;}
@@ -251,10 +251,10 @@ h5.section-sub-title span.necessary { top: -14px; }
 
 .swiper-slide-container {text-align: center;font-size: 1.125rem;background: #fff;width: 100%;/* height:100%; *//* max-width: 52.1vw !important; */margin:auto;}
 
-.eruda-portfolio-slider .swiper-slide {position: relative;width: calc(80vw - 4vw);max-width: 1030px;margin: 0 2vw;}
+.eruda-portfolio-slider .swiper-slide {position: relative;/* width: calc(80vw - 4vw); */max-width: 1030px;margin: 0 7.5PX;}
 .eruda-portfolio-slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next {background: none;}
 .eruda-portfolio-slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {background: none;}
-.eruda-portfolio-slider .swiper-button-wrapper {position: absolute;top: calc( 50% + 22.5px);left: 0;right: 0;z-index: 99;height: 45px;}
+.eruda-portfolio-slider .swiper-button-wrapper {position: absolute;top: calc( 50% + 28.5px);z-index: 99;height: 45px;left: 3vw;right: 2vw;}
 .btn-custom-1 {position: relative;padding: 9px 6px 9px 30px!important;font-size: 14px;font-weight: 500;color: #565656;border-color: #565656;border-radius: 0;}
 .btn-arrow-right { display: inline-block; margin: 4px 22px 3px 20px; width: 65px; height: 1px; background: #565656; }
 .btn-arrow-right:after { content: ''; position: absolute; top: 23px; right: 28px; display: block; width: 7px; height: 1px; transform: rotate(135deg); background: inherit; }
@@ -266,7 +266,7 @@ h5.section-sub-title span.necessary { top: -14px; }
 #eruda #sec1.hero-image {width: 100%;height: 100vw;background-position: center;background-repeat: no-repeat;background-size: cover;position: relative;color: #fff;}
 #eruda #sec1.hero-image .hero-text-wrap {position: absolute;top: calc(50% - 45px);width: 100%;text-align: center;}
 #eruda #sec1 #countup1 {font-family: 'Bebas Neue', cursive;margin: 0;}
-#eruda #sec1 #countup1 .text { font-size: 1.25rem; letter-spacing: 1.5px; font-weight: 400; }
+#eruda #sec1 #countup1 .text {font-size: 0.3em;letter-spacing: 1.5px;font-weight: 400;}
 #eruda #sec1 #countup1 .mx-3 {position: relative;line-height: 1;}
 #eruda #sec1 .timeel { line-height: 1; }
 #eruda #sec2 .txt-1 {margin: 9.375rem 0 6.25rem;}
@@ -277,20 +277,18 @@ h5.section-sub-title span.necessary { top: -14px; }
 #eruda #sec2 { position: relative; }
 #eruda #sec2 .ani-text-wrap {position: absolute;z-index: 10;transition: all 1.5s ease;}
 #eruda #sec3 .section-title { margin: 9.375rem 0 6.25rem; }
-#eruda #sec3 .list-1 .item p {padding-bottom: 1.25rem;margin: 0;font-size: 16px;font-weight: 500;line-height: 1;color: #141414;border-bottom: 3px solid #141414;}
+#eruda #sec3 .list-1 .item p {padding-bottom: 1.25rem;margin: 0;font-size: 16px;font-weight: 500;line-height: 1;color: #141414;}
 #eruda #sec3 .list-1 {margin-bottom: 9.375rem;}
 #eruda #sec3 .list-2 .item { width: 20%; }
 #eruda #sec3 .list-2 {margin: 0 0 12.5rem;}
 #eruda #sec4 .section-title { margin-bottom: 6.25rem; }
 #eruda #sec4 h4 {padding-top: 1.25rem;font-size: 20px;font-weight: 600;color: #141414;border-top: 1px solid #b5b5b5;margin-bottom: 3.125rem;}
-#eruda #sec4 p {padding-top: 1.25rem;margin-bottom: 6.25rem;font-size: 20px;line-height: 1.4;font-weight: 500;border-top: 1px solid #b5b5b5;}
+#eruda #sec4 p {padding-top: 1.25rem;margin-bottom: 6.25rem;}
 #eruda #sec4 > *:nth-child(2) { margin-bottom: 8.75rem; }
 #eruda #sec4 { margin-bottom: 15.625rem; }
 #eruda #sec4 .ci { margin-bottom: 60px; }
-#eruda #sec5 ul { margin: auto !important; max-width: 1000px; }
+#eruda #sec5 ul {margin: auto !important;max-width: 100%;}
 #eruda #sec5 ul li .text-wrap { position: absolute; width: 100%; height: 100%; top: 18%; left: 10%; color: #fff; }
-#eruda #sec5 ul li .text-wrap h4 { margin-bottom: 1.25rem; font-size: 3.75rem; font-weight: 700; }
-#eruda #sec5 ul li .text-wrap p { margin: 0; font-size: 1.25rem; font-weight: 400; line-height: 1.875rem; }
 #eruda #sec5 .section-sub-title {border: solid #141414;border-width: 2px 0;padding: 30px;margin: 6.25rem 0 0;overflow: hidden; }
 #eruda #sec5 img {width: 100%;height: 100%;object-fit: cover;}
 
@@ -385,9 +383,6 @@ h5.section-sub-title span.necessary { top: -14px; }
 .board-teb-menu.grid3 > div:nth-child(3) {
     padding-left: 7.5px;
     padding-right: 15px;
-}
-.custom-select {
-    font-size: 16px;
 }
 
 
@@ -698,18 +693,18 @@ body.popActive {overflow: hidden;}
     border-bottom: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 #proposalDownModal .modal-content {
-    padding: 5.5rem 8rem;
     border: 2px solid #141414;
     border-radius: 0;
 }
 
 #proposalDownModal .modal-title {
+    margin-top: 50px;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -779,7 +774,7 @@ body.popActive {overflow: hidden;}
 
 
 #eruda #sec5 ul.aos-animate {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 
@@ -912,4 +907,21 @@ div#anchor1 {
 a {
     color: inherit;
     text-decoration: none;
+}
+.privacy-wrap a {
+    position: absolute;
+    left: 0;
+    bottom: -54px;
+}
+
+.form-group input {
+    padding: 0;
+    line-height: 41px;
+}
+#eruda #sec3 .list-1 .item .box {
+    height: 100%;
+    border-bottom: 3px solid #141414;
+}
+#sec5 .col-6 {
+    height: 50vw;
 }

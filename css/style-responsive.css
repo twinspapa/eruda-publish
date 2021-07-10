@@ -121,6 +121,8 @@
   #wedo .accordion li { margin-bottom: 50px; padding-bottom: 50px; }
   #wedo .accordion li.click { margin-bottom: 100px; padding-bottom: 100px; }
   #wedo .accordion li .inner { margin-top: 100px;}
+  .privacy-wrap a {position: relative;margin-left: 1.25rem;line-height: 2.5rem;font-size: 16px;color: #b0b0b0;left: 0;bottom: 0;}
+  .eruda-portfolio-slider .swiper-slide { margin: 0 10px; }
 }
 /* End Small devices (landscape phones, 576px and up) */
 
@@ -176,12 +178,30 @@
   #eruda #sec1.hero-image .hero-text-wrap { top: calc(50% - 80px); }
   #portfolio .portfolio-category ul li { height: auto;}
   #board-detail .board-wrap { margin-bottom: 100px; font-size: 18px;}
-}
+
+  #proposalDownModal .modal-content {
+      padding: 5.5rem 8rem;
+  }
+
+  #proposalDownModal .modal-title {
+      margin-top: 0;
+      font-size: 24px;
+  }
+
+  #proposalDownModal .modal-header {
+      margin-bottom: 2rem;
+  }
+  .eruda-portfolio-slider .swiper-slide { margin: 0 15px; }
+  #eruda #sec4 p {
+      border-top: 1px solid #b5b5b5;
+  }
+  }
 /* End Medium devices (tablets, 768px and up) */
 
 
 /* .lg : Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .fs-lg-80{ font-size: 80px;}
   .fs-lg-60{ font-size: 60px;}
   .fs-lg-40{ font-size: 40px;}
   .fs-lg-30{ font-size: 30px;}
@@ -231,6 +251,8 @@
   #footer .btn-wrap { max-width: 270px; }
   #gnb .nav-wrap { justify-content: space-between !important; }
   #gnb .nav-wrap {padding: 45px 8.5vw 25px;transition: background .5s ease;}
+  .form-group .col-form-lable { border-bottom: 1px solid #d3d3d3; line-height: 30px;}
+  .eruda-portfolio-slider .swiper-slide { margin: 0 25px; }
 }
 /* .fs : End Large devices (desktops, 992px and up) */
 
@@ -286,7 +308,6 @@
 
   #wedo .nest .item .item-text,
   #wedo .accordion .inner .inner-title { font-size: 20px; }
-  .eruda-portfolio-slider .swiper-button-wrapper {left: 12vw;right: 12vw;}
 
 }
 /* End X-Large devices (large desktops, 1200px and up) */
