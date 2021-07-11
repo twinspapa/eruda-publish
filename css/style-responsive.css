@@ -109,6 +109,7 @@
   .board-teb-menu > div a { padding: 25px 0;}
   .board-type-2.list .item:nth-child(1) > div, .board-type-2.list .item:nth-child(2) > div { border-top: 1px solid #141414; }
 
+  #gnb .nav-wrap .logo { width: auto; height: 30px; }
   #footer { padding-top: 300px; padding-bottom: 160px; }
   #footer .btn-wrap { margin-top: 10px; max-width: 270px; }
 
@@ -123,6 +124,11 @@
   #wedo .accordion li .inner { margin-top: 100px;}
   .privacy-wrap a {position: relative;margin-left: 1.25rem;line-height: 2.5rem;font-size: 16px;color: #b0b0b0;left: 0;bottom: 0;}
   .eruda-portfolio-slider .swiper-slide { margin: 0 10px; }
+  #eruda #sec2 .ani-text-wrap { padding-top: 150px; }
+  #eruda #sec2.aos-animate .img-wrap { padding: 350px 0 0 !important; }
+
+  #home .what-we-do ul li:nth-child(odd) {padding: 0 10px 0 15px;}
+  #home .what-we-do ul li:nth-child(even) {padding: 0 15px 0 10px;}
 }
 /* End Small devices (landscape phones, 576px and up) */
 
@@ -361,3 +367,11 @@
   .mt-xxl-300{ margin-top: 300px; }
 }
 /* End XX-Large devices (larger desktops, 1400px and up) */
+
+@media (hover: hover) and (pointer: fine) {
+  #gnb .nav-wrap:hover {background: rgba(255,255,255,.9);}
+  #gnb .nav-wrap:hover .nav-list ul li.two { display: block; }
+  #gnb.hero-page .nav-wrap:hover .logo .logo-b, #gnb .nav-wrap:hover .logo .logo-b { display: block; }
+  #gnb.hero-page .nav-wrap:hover .nav-list ul li a { color: #141414; }
+  #gnb.hero-page .nav-wrap:hover .logo .logo-w { display: none; }
+}
