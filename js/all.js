@@ -159,7 +159,7 @@ function createAlert(title, summary, details, severity, dismissible, autoDismiss
       setTimeout(function(){
         msg.remove();
       },1000);
-    }, 5000);
+    }, 3000);
   }
 }
 
