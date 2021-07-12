@@ -2,7 +2,7 @@
 ::-webkit-scrollbar {display: none;}
 body {-ms-overflow-style: none;}
 body{color: #141414;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;width: 100vw;font-size: 100%; /*500*/line-height: 1;word-break: keep-all;-ms-overflow-style: none;}
-select, input {outline: 0;background: transparent;border-radius: 0;-webkit-appearance: none;-webkit-border-radius: 0;-moz-appearance: none;}
+select, input, textarea {outline: 0;background: transparent;border-radius: 0;-webkit-appearance: none;-webkit-border-radius: 0;-moz-appearance: none;outline-offset: 0px !important;}
 input:checked[type="checkbox"] {background-color:#fff;-webkit-appearance:checkbox;}
 option {color: #d3d3d3;font-size: 0.875rem;}
 input::placeholder { color: #d3d3d3; font-size: 16px; font-weight: 400; }
@@ -79,7 +79,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="email"]
 
 /* search-type-1 */
 .search-type-1 select,
-.search-type-1 input {position: relative;padding: 8px 0;width: 100%;height: 100%;border-width: 0 0 2px 0;border-color: #141414;}
+.search-type-1 input {position: relative;padding: 8px 0;width: 100%;height: 100%;border-width: 0 0 2px 0;border-color: #141414;line-height: 1;}
 .search-type-1 a {position: absolute;top: 0;right: 15px;width: 36px;}
 
 
