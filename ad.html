@@ -87,7 +87,7 @@
 
     <main id=ad>
         <section class="container mt-100 mt-md-150 mt-lg-200 mb-50 mb-sm-100">
-          <h3 class="fs-34 fs-md-60 fw-700 mb-30 mb-sm-60 br-circle" data-aos="fade-up"  data-aos-once="true">
+          <h3 class="fs-34 fs-md-60 fw-700 line-height-14 mb-30 mb-sm-60 br-circle" data-aos="fade-up"  data-aos-once="true">
               이루다마케팅과<br>
               함께 성장할 준비 되셨나요?
           </h3>
@@ -104,12 +104,12 @@
                 </div>
             </div>
         </section>
-        <section class="container overflow-hidden mt-5">
+        <section class="container overflow-hidden mt-5 mb-150 mb-sm-300">
             <form id="ad_contact" name="ad_contact" action="" method="post" target="trickSubmit" onsubmit="jbSubmit2();">
                 <fieldset>
                     <div data-aos="fade-up"  data-aos-once="true">
-                        <h3 class="fs-34 fs-md-60 fw-700 mb-20 mb-sm-40">어떤 서비스가 필요하신가요?</h3>
-                        <h4 class="fs-20 fs-sm-30 fw-600 mb-50 mb-sm-100">아래 항목을 작성해 주시면 빠른 시일 내에 답변드리겠습니다.</h4>
+                        <h3 class="fs-34 fs-md-60 fw-700 line-height-14 mb-20 mb-sm-40">어떤 서비스가 필요하신가요?</h3>
+                        <h4 class="fs-20 fs-sm-30 fw-600 line-height-14 mb-50 mb-sm-100">아래 항목을 작성해 주시면 빠른 시일 내에 답변드리겠습니다.</h4>
                     </div>
                     <div class="form-check-group mb-30 mb-sm-60" data-aos="fade-up"  data-aos-once="true">
                         <h5 class="fs-18 fs-sm-24 mb-30">필요한 서비스를 선택해 주세요<span class="fs-14 fs-sm-16 fc-5e5e5e ml-1">중복 선택 가능</span></h5>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="form-text-input mb-50 mb-sm-100" data-aos="fade-up"  data-aos-once="true">
-                        <h5 class="fs-18 fs-sm-24 mb-10">광고 예산은 어느정도 인가요?</h5>
+                        <h5 class="fs-18 fs-sm-24 mb-10">광고 예산은 어느 정도 인가요?</h5>
                         <input type="text" name="" value="" placeholder="예상하는 광고 예산을 입력해 주세요.">
                     </div>
                     <div class="form-text-input mb-50 mb-sm-100" data-aos="fade-up"  data-aos-once="true">
@@ -221,6 +221,32 @@
                     </div>
                 </fieldset>
             </form>
+        </section>
+        <section class="eruda-office mb-150 mb-sm-300">
+            <div class="container mb-50" data-aos="fade-up" data-aos-once="true">
+                <h3 class="br-circle fs-34 fs-md-60 fw-700">ERUDA Office</h3>
+            </div>
+            <div class="eruda-office-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/main-office.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main-office-sample.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main-office.png" alt="" />
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="container position-relative">
+                    <div class="eruda-office-slider-pagination"></div>
+
+                    <div class="swiper-progress-bar">
+                      <span class="slide_progress-bar"></span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="company-address-map"></section>
     </main>
@@ -350,6 +376,42 @@
 
             $("form").on("change", ".file-upload-field", function() {
                 $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+            });
+
+            $(document).ready(function() {
+                var swiper = new Swiper(".eruda-office-slider", {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    speed: 2000,
+                    loop: true,
+                    effect: 'fade',
+                    pagination: {
+                        el: ".eruda-office-slider-pagination",
+                        type: "fraction"
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev"
+                    },
+                    on: {
+                        init: function() {
+                            $(".swiper-progress-bar").removeClass("animate");
+                            $(".swiper-progress-bar").removeClass("active");
+                            $(".swiper-progress-bar").eq(0).addClass("animate");
+                            $(".swiper-progress-bar").eq(0).addClass("active");
+                        },
+                        slideChangeTransitionStart: function() {
+                            $(".swiper-progress-bar").removeClass("animate");
+                            $(".swiper-progress-bar").removeClass("active");
+                            $(".swiper-progress-bar").eq(0).addClass("active");
+                        },
+                        slideChangeTransitionEnd: function() {
+                            $(".swiper-progress-bar").eq(0).addClass("animate");
+                        }
+                    }
+                });
             });
         })(jQuery);
 

@@ -7,6 +7,10 @@
     $(document).ready(function() {
         history.scrollRestoration = "manual";
 
+        $('.btn-top').click(function(){
+            $('body, html').animate({scrollTop:0}, 500);
+        });
+
         $('#gnb .menu').click(function() {
             $(this).toggleClass('active');
             $('.pop-gnb').toggleClass('active');
@@ -65,6 +69,55 @@
     $('#proposalDownModal').on('hidden.bs.modal', function (e) {
         $('#formProposalDown')[0].reset();
     });
+
+    const name = document.getElementById('name'),
+          email = document.getElementById('email'),
+          tel = document.getElementById('tel');
+
+    name.addEventListener('invalid', e => {
+      // 필수 항목을 누락한 경우
+      if (name.validity.valueMissing) {
+        name.setCustomValidity('회사명은 필수 항목입니다.');
+
+      // 지정한 패턴과 미스매치인 경우
+    } else if (name.validity.patternMismatch) {
+        name.setCustomValidity('한글,영문,숫자만 입력할 수 있습니다.');
+
+      // 데이터 유효성 검사를 통과한 경우
+      } else {
+        name.setCustomValidity('');
+      }
+    })
+
+    email.addEventListener('invalid', e => {
+      // 필수 항목을 누락한 경우
+      if (email.validity.valueMissing) {
+        email.setCustomValidity('이메일은 필수 항목입니다.');
+
+      // 지정한 패턴과 미스매치인 경우
+    } else if (email.validity.patternMismatch) {
+        email.setCustomValidity('영문,숫자만 입력할 수 있습니다.');
+
+      // 데이터 유효성 검사를 통과한 경우
+      } else {
+        email.setCustomValidity('');
+      }
+    })
+
+    tel.addEventListener('invalid', e => {
+      // 필수 항목을 누락한 경우
+      if (tel.validity.valueMissing) {
+        tel.setCustomValidity('연락처는 필수 항목입니다.');
+
+      // 지정한 패턴과 미스매치인 경우
+    } else if (tel.validity.patternMismatch) {
+        tel.setCustomValidity('숫자만 입력할 수 있습니다.');
+
+      // 데이터 유효성 검사를 통과한 경우
+      } else {
+        tel.setCustomValidity('');
+      }
+    })
 
 })(jQuery);
 
@@ -159,7 +212,7 @@ function createAlert(title, summary, details, severity, dismissible, autoDismiss
       setTimeout(function(){
         msg.remove();
       },1000);
-    }, 3000);
+    }, 2000);
   }
 }
 

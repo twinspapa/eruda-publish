@@ -106,7 +106,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-auto">(으)로 잇다</div>
+                <div class="col-12 col-sm-auto">로 잇다</div>
             </div>
             <h4 class="fs-20 fs-sm-30 mb-30 mb-sm-60 fw-600 line-height-14">
                 브랜드와 소비자의 접점을 찾기 위해<br class="d-xl-none">
@@ -155,7 +155,7 @@
         </section>
         <section class="container">
             <ul class="accordion">
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-01">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">01</div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-02">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">02</div>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-03">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">03</div>
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-04">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">04</div>
@@ -247,7 +247,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-05">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">05</div>
@@ -269,7 +269,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-aos="fade-up" data-aos-once="true">
+                <li data-aos="fade-up" data-aos-once="true" id="anchor-06">
                     <div class="nest">
                         <div class="item">
                             <div class="fs-16 fs-sm-20 fw-700">06</div>
@@ -282,7 +282,7 @@
                     <div class="inner">
                         <div class="mb-50 mb-md-100">
                             <P class="fs-16 fs-sm-20 fw-900">PROCESS</P>
-                            <P class="fs-16 fs-sm-20 fw-500 line-height-14 mb-50">이루다마케팅만의 애널리틱스 솔루션은 고객의 행동 데이터 분석을 통해 도출 된 인사이트로 고객 브랜드 경험 개선,<br> 마케팅 퍼포먼스 효율화를 제공합니다.</P>
+                            <P class="fs-16 fs-sm-20 fw-500 line-height-14 mb-50">이루다마케팅만의 애널리틱스 솔루션은 고객의 행동 데이터 분석을 통해 도출된 인사이트로 고객 브랜드 경험 개선,<br> 마케팅 퍼포먼스 효율화를 제공합니다.</P>
                             <div class="img-wrap">
                                 <img src="images/wedo-process-06.png" alt="" class="d-none d-lg-block">
                                 <img src="images/mo-wedo-process-06.png" alt="" class="d-block d-lg-none m-auto">
@@ -296,25 +296,25 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6 mb-50 mb-md-100">
-                                <P class="fs-16 fs-sm-20 fw-900">ERUDA ANALYTICS</P>
+                                <P class="fs-16 fs-sm-20 fw-900">GOOGLE ANALYTICS</P>
                                 <div class="inner-item-img">
                                     <img src="images/work_we do_4.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 mb-50 mb-md-100">
-                                <P class="fs-16 fs-sm-20 fw-900">ERUDA ANALYTICS</P>
+                                <P class="fs-16 fs-sm-20 fw-900">CUSTOM REPORT SYSTEM</P>
                                 <div class="inner-item-img">
                                     <img src="images/work_we do_5.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 mb-50 mb-md-100">
-                                <P class="fs-16 fs-sm-20 fw-900">ERUDA ANALYTICS</P>
+                                <P class="fs-16 fs-sm-20 fw-900">BRAND SOCIAL MONITORING</P>
                                 <div class="inner-item-img">
                                     <img src="images/work_we do_6.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 mb-0">
-                                <P class="fs-16 fs-sm-20 fw-900">ERUDA ANALYTICS</P>
+                                <P class="fs-16 fs-sm-20 fw-900">ACE COUNTER</P>
                                 <div class="inner-item-img">
                                     <img src="images/work_we do_7.png" alt="">
                                 </div>
@@ -486,8 +486,14 @@
                             scrollTop: $(".accordion li.click").offset().top - gnbHeight
                         }, 400);
                     }, 500);
-
                 });
+
+                var hash = location.hash;
+                if (hash !== "") {
+                    setTimeout(function() {
+                        $(hash).trigger('click')
+                    }, 1000);
+                }
 
                 $(window).on('resize', function() {
                     raito('counter-box-item', 1);
