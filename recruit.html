@@ -354,7 +354,11 @@
                 </div>
             </div>
         </section>
-        <section class="company-address-map"></section>
+        <section class="company-address-map">
+            <div class="container">
+                <div id="map" class="" style="height:100vw; max-height:500px;"></div>
+            </div>
+        </section>
     </main>
 
 
@@ -519,6 +523,47 @@
                         slideChangeTransitionEnd: function() {
                             $(".swiper-progress-bar").eq(0).addClass("animate");
                         }
+                    }
+                });
+
+                // NAVER MAP API
+                var HOME_PATH = window.HOME_PATH || '.';
+                var cityhall = new naver.maps.LatLng(37.5463840704561, 127.065868270701),
+                    map = new naver.maps.Map('map', {
+                        center: cityhall,
+                        zoom: 15
+                    }),
+                    marker = new naver.maps.Marker({
+                        map: map,
+                        position: cityhall
+                    });
+
+                var contentString = [
+                        '<div class="iw_inner">',
+                        '   <h3>이루다마케팅</h3>',
+                        '   <p>서울특별시 성동구 아차산로 17길 48 SKV1센터 1동 1017~1022호</p>',
+                        '</div>'
+                    ].join('');
+
+                var infowindow = new naver.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 240,
+                    backgroundColor: "#fff",
+                    borderColor: "#198bb4",
+                    borderWidth: 1,
+                    anchorSize: new naver.maps.Size(30, 30),
+                    anchorSkew: true,
+                    anchorColor: "#fff",
+                    pixelOffset: new naver.maps.Point(20, 0)
+                });
+
+                infowindow.open(map, marker);
+
+                naver.maps.Event.addListener(marker, "click", function(e) {
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
                     }
                 });
             });
