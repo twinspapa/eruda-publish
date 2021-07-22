@@ -714,6 +714,7 @@ body.popActive {overflow: hidden;}
     font-weight: 500;
     white-space: pre-wrap;
     font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    overflow: hidden;
 }
 
 .alert {
